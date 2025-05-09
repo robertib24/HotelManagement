@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -87,6 +91,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\Hotel.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Models\\Hotel.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\Hotel.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Models\\Hotel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T19:38:47.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "WebApiConfig.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\App_Start\\WebApiConfig.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\App_Start\\WebApiConfig.cs",
@@ -99,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\ServicesController.cs",
@@ -111,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Global.asax.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Global.asax.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Migrations\\Configuration.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Migrations\\Configuration.cs",
@@ -135,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ReservationsController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
@@ -147,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\CustomersController.cs",
@@ -159,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\App_Start\\RouteConfig.cs",
@@ -171,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "RoomsController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
@@ -183,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IRepository.cs",
@@ -195,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ReservationServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\ReservationServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\ReservationServiceRepository.cs",
@@ -207,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "InvoiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\InvoiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\InvoiceRepository.cs",
@@ -219,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Repository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\Repository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\Repository.cs",
@@ -231,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IInvoiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IInvoiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IInvoiceRepository.cs",
@@ -243,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IReservationServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IReservationServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IReservationServiceRepository.cs",
@@ -255,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\ServiceRepository.cs",
@@ -267,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IServiceRepository.cs",
@@ -279,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IRoomRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
@@ -291,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IHotelRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IHotelRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IHotelRepository.cs",
