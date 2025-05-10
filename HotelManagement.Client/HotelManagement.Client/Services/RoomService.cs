@@ -101,6 +101,22 @@ namespace HotelManagement.Client.Services
             }
         }
 
+        public async Task<List<RoomModel>> GetRoomsByHotelAsync(int hotelId)
+        {
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync($"rooms/hotel/{hotelId}"))
+            {
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    return JsonConvert.DeserializeObject<List<RoomModel>>(result);
+                }
+                else
+                {
+                    throw new Exception($"Error: {response.ReasonPhrase}");
+                }
+            }
+        }
+
         public async Task UpdateRoomStatusAsync(int roomId, bool isOccupied, bool isClean, bool needsRepair)
         {
             var model = new

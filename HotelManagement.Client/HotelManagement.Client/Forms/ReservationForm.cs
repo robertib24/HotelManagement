@@ -439,9 +439,3 @@ namespace HotelManagement.Client.Forms
         }
     }
 }
-Box.Show("Rezervare actualizată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-{
-    await _reservationService.CreateReservationAsync(_reservation);
-    Message

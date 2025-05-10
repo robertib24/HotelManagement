@@ -747,3 +747,4 @@
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
     }
+}
