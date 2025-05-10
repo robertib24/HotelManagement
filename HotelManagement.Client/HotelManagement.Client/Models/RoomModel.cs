@@ -27,5 +27,11 @@ namespace HotelManagement.Client.Models
                 return "Disponibilă";
             }
         }
+
+        // Override pentru a afișa numărul camerei în loc de tipul complet
+        public override string ToString()
+        {
+            return RoomNumber ?? "Cameră necunoscută";
+        }
     }
 }

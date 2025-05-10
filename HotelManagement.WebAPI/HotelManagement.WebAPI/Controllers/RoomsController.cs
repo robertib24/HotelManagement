@@ -31,6 +31,8 @@ namespace HotelManagement.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in GetRooms: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }
@@ -51,6 +53,8 @@ namespace HotelManagement.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in GetRoom: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }
@@ -72,6 +76,8 @@ namespace HotelManagement.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in IsRoomAvailable: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }
@@ -83,17 +89,35 @@ namespace HotelManagement.WebAPI.Controllers
         {
             try
             {
+                System.Diagnostics.Debug.WriteLine("CreateRoom method called");
+
                 if (!ModelState.IsValid)
                 {
+                    System.Diagnostics.Debug.WriteLine("Model state is invalid");
                     return BadRequest(ModelState);
                 }
 
+                System.Diagnostics.Debug.WriteLine("Adding room to repository");
                 await _roomRepository.AddAsync(room);
-                return CreatedAtRoute("DefaultApi", new { id = room.Id }, room);
+                System.Diagnostics.Debug.WriteLine($"Room added successfully with ID: {room.Id}");
+
+                // Returnează doar un mesaj de succes și ID-ul, nu entitatea completă
+                return Ok(new { Id = room.Id, Message = "Room created successfully" });
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                // Log excepția pentru debugging
+                System.Diagnostics.Debug.WriteLine($"Error in CreateRoom: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+
+                if (ex.InnerException != null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    System.Diagnostics.Debug.WriteLine($"Inner stack trace: {ex.InnerException.StackTrace}");
+                }
+
+                // Returnează un mesaj de eroare mai descriptiv
+                return InternalServerError(new Exception("An error occurred while creating the room. Check logs for details."));
             }
         }
 
@@ -121,11 +145,21 @@ namespace HotelManagement.WebAPI.Controllers
                 }
 
                 await _roomRepository.UpdateAsync(room);
-                return StatusCode(HttpStatusCode.NoContent);
+
+                // Returnează un mesaj de succes în loc de entitate
+                return Ok(new { Message = "Room updated successfully" });
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                System.Diagnostics.Debug.WriteLine($"Error in UpdateRoom: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+
+                if (ex.InnerException != null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                }
+
+                return InternalServerError(new Exception("An error occurred while updating the room. Check logs for details."));
             }
         }
 
@@ -147,6 +181,8 @@ namespace HotelManagement.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in UpdateRoomStatus: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }
@@ -167,6 +203,8 @@ namespace HotelManagement.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in GetRoomsByHotel: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }
@@ -182,6 +220,8 @@ namespace HotelManagement.WebAPI.Controllers
         {
             try
             {
+                System.Diagnostics.Debug.WriteLine($"GetAvailableRooms called with hotelId={hotelId}, roomTypeId={roomTypeId}, checkIn={checkIn}, checkOut={checkOut}");
+
                 if (!checkIn.HasValue || !checkOut.HasValue)
                 {
                     return BadRequest("Both checkIn and checkOut dates are required");
@@ -198,10 +238,13 @@ namespace HotelManagement.WebAPI.Controllers
                     checkIn.Value,
                     checkOut.Value);
 
+                System.Diagnostics.Debug.WriteLine($"Found {rooms.Count()} available rooms");
                 return Ok(rooms);
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in GetAvailableRooms: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }
@@ -224,6 +267,8 @@ namespace HotelManagement.WebAPI.Controllers
             }
             catch (Exception ex)
             {
+                System.Diagnostics.Debug.WriteLine($"Error in DeleteRoom: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
                 return InternalServerError(ex);
             }
         }

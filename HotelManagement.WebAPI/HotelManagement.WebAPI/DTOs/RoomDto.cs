@@ -19,5 +19,15 @@ namespace HotelManagement.WebAPI.DTOs
         public bool NeedsRepair { get; set; }
         public string Notes { get; set; }
         public decimal Price { get; set; }
+        public string Status
+        {
+            get
+            {
+                if (NeedsRepair) return "Necesită reparații";
+                if (IsOccupied) return "Ocupată";
+                if (!IsClean) return "Necesită curățenie";
+                return "Disponibilă";
+            }
+        }
     }
 }

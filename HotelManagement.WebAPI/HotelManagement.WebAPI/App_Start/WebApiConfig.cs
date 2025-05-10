@@ -32,6 +32,8 @@ namespace HotelManagement.WebAPI
             );
 
             // Configure JSON serialization to ignore reference loops and nulls
+            var json = config.Formatters.JsonFormatter;
+            json.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             var formatters = config.Formatters;
             var jsonFormatter = formatters.JsonFormatter;
             var settings = jsonFormatter.SerializerSettings;

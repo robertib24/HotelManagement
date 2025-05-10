@@ -276,6 +276,26 @@ namespace HotelManagement.WebAPI.Repositories
             return room.RoomType.BasePrice * numberOfDays;
         }
 
+        public async Task<decimal> GetDailyRevenueAsync(DateTime date)
+        {
+            try
+            {
+                // Calculează venitul din rezervările active pentru ziua respectivă
+                var dailyRevenue = await _context.Reservations
+                    .Where(r => r.CheckInDate.Date <= date.Date && r.CheckOutDate.Date >= date.Date &&
+                          (r.ReservationStatus == "CheckedIn" || r.ReservationStatus == "Completed"))
+                    .SumAsync(r => r.TotalPrice / ((r.CheckOutDate - r.CheckInDate).Days > 0 ?
+                                                   (r.CheckOutDate - r.CheckInDate).Days : 1));
+
+                return dailyRevenue;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Error calculating daily revenue: {ex.Message}");
+                return 0; // Returnează 0 în caz de eroare
+            }
+        }
+
         public async Task<bool> IsRoomAvailableForReservationAsync(int roomId, DateTime checkIn, DateTime checkOut, int? excludeReservationId = null)
         {
             var room = await _context.Rooms.FindAsync(roomId);

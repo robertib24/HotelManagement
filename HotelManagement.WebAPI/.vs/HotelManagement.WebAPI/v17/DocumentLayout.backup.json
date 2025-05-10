@@ -3,39 +3,59 @@
   "WorkspaceRootPath": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\models\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\models\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\dtos\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\dtos\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\iroomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\reservationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\controllers\\roomtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\controllers\\roomtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\roomtypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,7 +63,7 @@
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -61,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\reservationservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\reservationservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,37 +114,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\ReservationRepository.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\ReservationRepository.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\ReservationRepository.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAIwBUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T22:52:08.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationsController.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAAALkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T18:57:28.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RoomRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\RoomRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\RoomRepository.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\RoomRepository.cs",
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\RoomRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAIwLoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T20:54:52.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T20:54:52.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IRoomRepository.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
-              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
-              "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:24:30.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Global.asax.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Global.asax.cs",
@@ -136,38 +163,95 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Global.asax.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAiwBkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:55:59.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:55:59.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "RoomDto.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\DTOs\\RoomDto.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\DTOs\\RoomDto.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\DTOs\\RoomDto.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\DTOs\\RoomDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA2wBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T22:30:20.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\ReservationService.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Models\\ReservationService.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\ReservationService.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Models\\ReservationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T22:55:57.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "WebApiConfig.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\App_Start\\WebApiConfig.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\App_Start\\WebApiConfig.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\App_Start\\WebApiConfig.cs",
               "RelativeToolTip": "HotelManagement.WebAPI\\App_Start\\WebApiConfig.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCUAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:17:30.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:17:30.991Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Models\\Room.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\Room.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Models\\Room.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T22:27:59.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "RoomsController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAADwv7gAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAP4AAAAAAAAAAAA3wA8BAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:55:33.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:55:33.12Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\Repository.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T18:40:49.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IRoomRepository.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
+              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
+              "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T18:24:30.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\CustomersController.cs",
@@ -175,12 +259,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\CustomersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:57:04.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:57:04.87Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "RoomTypeController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\RoomTypeController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\RoomTypeController.cs",
@@ -188,25 +271,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\RoomTypeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:58:25.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:58:25.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ReservationsController.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
-              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
-              "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAvwKYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:57:28.221Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Data\\DbInitializer.cs",
@@ -214,12 +283,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Data\\DbInitializer.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAmwBMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:21:30.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-10T18:21:30.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Controllers\\ServicesController.cs",
@@ -227,12 +295,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\ServicesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:59:03.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:59:03.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Hotel.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\Hotel.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Models\\Hotel.cs",
@@ -240,12 +307,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Models\\Hotel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:38:47.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:38:47.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Migrations\\Configuration.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Migrations\\Configuration.cs",
@@ -253,12 +319,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Migrations\\Configuration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:06:23.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T19:06:23.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\App_Start\\RouteConfig.cs",
@@ -266,12 +331,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:56:42.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:56:42.437Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IRepository.cs",
@@ -279,12 +343,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wBAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:47:32.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:47:32.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "ReservationServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\ReservationServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\ReservationServiceRepository.cs",
@@ -292,12 +355,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\ReservationServiceRepository.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAgwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:40:11.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:40:11.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "InvoiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\InvoiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\InvoiceRepository.cs",
@@ -305,25 +367,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\InvoiceRepository.cs",
               "ViewState": "AgIAAIcAAAAAAAAAAAAWwKgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:42:46.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:42:46.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\Repository.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\Repository.cs",
-              "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAcwAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:40:49.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "IInvoiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IInvoiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IInvoiceRepository.cs",
@@ -331,12 +379,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IInvoiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:42:29.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:42:29.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "IReservationServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IReservationServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IReservationServiceRepository.cs",
@@ -344,12 +391,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IReservationServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:39:36.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:39:36.339Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\ServiceRepository.cs",
@@ -357,12 +403,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\ServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:23:48.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:23:48.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "IServiceRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IServiceRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IServiceRepository.cs",
@@ -370,12 +415,11 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:23:33.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:23:33.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "IHotelRepository.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Repositories\\IHotelRepository.cs",
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Repositories\\IHotelRepository.cs",
@@ -383,8 +427,7 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IHotelRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:21:47.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T18:21:47.61Z"
             }
           ]
         }

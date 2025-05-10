@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Newtonsoft.Json;
 using HotelManagement.WebAPI.Models;
 
 namespace HotelManagement.WebAPI.Models
@@ -23,8 +24,13 @@ namespace HotelManagement.WebAPI.Models
         public bool NeedsRepair { get; set; }
         public string Notes { get; set; }
 
+        [JsonIgnore]
         public virtual Hotel Hotel { get; set; }
+
+        [JsonIgnore]
         public virtual RoomType RoomType { get; set; }
+
+        [JsonIgnore]
         public virtual ICollection<Reservation> Reservations { get; set; }
     }
 }

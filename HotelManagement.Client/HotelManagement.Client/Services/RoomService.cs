@@ -46,6 +46,7 @@ namespace HotelManagement.Client.Services
         {
             try
             {
+                // Format the dates properly in the query string
                 string relativeUrl = $"rooms/available?hotelId={hotelId}&checkIn={checkIn:yyyy-MM-dd}&checkOut={checkOut:yyyy-MM-dd}";
 
                 if (roomTypeId.HasValue)
@@ -53,25 +54,21 @@ namespace HotelManagement.Client.Services
                     relativeUrl += $"&roomTypeId={roomTypeId.Value}";
                 }
 
-                Console.WriteLine($"Trimitem request la: {ApiHelper.ApiClient.BaseAddress}{relativeUrl}");
-
                 var response = await ApiHelper.ApiClient.GetAsync(relativeUrl);
 
                 if (!response.IsSuccessStatusCode)
                 {
                     var errorContent = await response.Content.ReadAsStringAsync();
-                    throw new Exception($"Eroare API: {response.StatusCode}\nDetalii: {errorContent}");
+                    throw new Exception($"API Error: {response.StatusCode}\nDetails: {errorContent}");
                 }
 
                 var content = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Răspuns primit: {content}");
-
                 return JsonConvert.DeserializeObject<List<RoomModel>>(content) ?? new List<RoomModel>();
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Eroare gravă la obținerea camerelor: {ex.Message}",
-                              "Eroare API",
+                MessageBox.Show($"Serious error getting rooms: {ex.Message}",
+                              "API Error",
                               MessageBoxButtons.OK,
                               MessageBoxIcon.Error);
                 return new List<RoomModel>();
@@ -140,7 +137,7 @@ namespace HotelManagement.Client.Services
 
         public async Task<List<RoomModel>> GetRoomsByHotelAsync(int hotelId)
         {
-            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync($"rooms/hotel/{hotelId}"))
+            using (HttpResponseMessage response = await ApiHelper.ApiClient.GetAsync($"rooms/byHotel/{hotelId}"))
             {
                 if (response.IsSuccessStatusCode)
                 {
