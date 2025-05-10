@@ -1,0 +1,5 @@
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.csproj.AssemblyReference.cache
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.Forms.RoomsListForm.resources
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.Properties.Resources.resources
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.csproj.GenerateResource.cache
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.csproj.CoreCompileInputs.cache

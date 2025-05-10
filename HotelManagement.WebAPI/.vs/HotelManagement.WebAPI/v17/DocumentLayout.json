@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\models\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.webapi\\hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1865D304-E89E-4878-BD46-BEF50E9AC2E2}|HotelManagement.WebAPI\\HotelManagement.WebAPI.csproj|solutionrelative:hotelmanagement.webapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "HotelManagement.WebAPI\\Models\\Hotel.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.WebAPI\\HotelManagement.WebAPI\\Models\\Hotel.cs",
               "RelativeToolTip": "HotelManagement.WebAPI\\Models\\Hotel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T19:38:47.734Z",
               "EditorCaption": ""
@@ -124,7 +124,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\ServicesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:59:03.394Z"
+              "WhenOpened": "2025-05-09T18:59:03.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -136,7 +137,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Global.asax.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:55:59.281Z"
+              "WhenOpened": "2025-05-09T18:55:59.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -148,7 +150,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Migrations\\Configuration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T19:06:23.847Z"
+              "WhenOpened": "2025-05-09T19:06:23.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -160,7 +163,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\ReservationsController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAMwEkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:57:28.221Z"
+              "WhenOpened": "2025-05-09T18:57:28.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -172,7 +176,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\CustomersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:57:04.87Z"
+              "WhenOpened": "2025-05-09T18:57:04.87Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -184,7 +189,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\App_Start\\RouteConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:56:42.437Z"
+              "WhenOpened": "2025-05-09T18:56:42.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -196,7 +202,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Controllers\\RoomsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:55:33.12Z"
+              "WhenOpened": "2025-05-09T18:55:33.12Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -208,7 +215,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAA3wBAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:47:32.038Z"
+              "WhenOpened": "2025-05-09T18:47:32.038Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -220,7 +228,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\ReservationServiceRepository.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAgwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:40:11.698Z"
+              "WhenOpened": "2025-05-09T18:40:11.698Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -232,7 +241,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\InvoiceRepository.cs",
               "ViewState": "AgIAAIcAAAAAAAAAAAAWwKgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:42:46.525Z"
+              "WhenOpened": "2025-05-09T18:42:46.525Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -244,7 +254,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\Repository.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAcwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:40:49.384Z"
+              "WhenOpened": "2025-05-09T18:40:49.384Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -256,7 +267,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IInvoiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:42:29.342Z"
+              "WhenOpened": "2025-05-09T18:42:29.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -268,7 +280,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IReservationServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:39:36.339Z"
+              "WhenOpened": "2025-05-09T18:39:36.339Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -280,7 +293,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\ServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:23:48.403Z"
+              "WhenOpened": "2025-05-09T18:23:48.403Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -292,7 +306,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:23:33.933Z"
+              "WhenOpened": "2025-05-09T18:23:33.933Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -304,7 +319,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IRoomRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:24:30.357Z"
+              "WhenOpened": "2025-05-09T18:24:30.357Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -316,7 +332,8 @@
               "RelativeToolTip": "HotelManagement.WebAPI\\Repositories\\IHotelRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T18:21:47.61Z"
+              "WhenOpened": "2025-05-09T18:21:47.61Z",
+              "EditorCaption": ""
             }
           ]
         }
