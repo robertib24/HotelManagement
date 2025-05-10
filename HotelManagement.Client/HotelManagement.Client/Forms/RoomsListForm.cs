@@ -29,13 +29,11 @@ namespace HotelManagement.Client.Forms
             this.Text = _hotelId.HasValue ? $"Camere - {_hotelName}" : "Lista camere";
             lblTitle.Text = _hotelId.HasValue ? $"Camere pentru hotelul: {_hotelName}" : "Toate camerele";
 
-            // Setări pentru DataGridView
             SetupDataGridView();
         }
 
         private void SetupDataGridView()
         {
-            // Configurare DataGridView
             dgvRooms.AutoGenerateColumns = false;
             dgvRooms.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvRooms.MultiSelect = false;
@@ -45,7 +43,6 @@ namespace HotelManagement.Client.Forms
             dgvRooms.AllowUserToOrderColumns = true;
             dgvRooms.AllowUserToResizeRows = false;
 
-            // Stilizare
             dgvRooms.BackgroundColor = Color.FromArgb(45, 45, 60);
             dgvRooms.BorderStyle = BorderStyle.None;
             dgvRooms.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -69,7 +66,6 @@ namespace HotelManagement.Client.Forms
             dgvRooms.RowHeadersVisible = false;
             dgvRooms.RowTemplate.Height = 35;
 
-            // Definire coloane
             dgvRooms.Columns.Clear();
 
             dgvRooms.Columns.Add(new DataGridViewTextBoxColumn
@@ -133,7 +129,6 @@ namespace HotelManagement.Client.Forms
                 Width = 100
             });
 
-            // Adaugă coloane pentru butoane/acțiuni
             var editColumn = new DataGridViewButtonColumn
             {
                 Name = "Edit",
@@ -161,10 +156,8 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Încarcă datele pentru dropdown-uri
                 await LoadComboBoxData();
 
-                // Încarcă camerele
                 await LoadRooms();
             }
             catch (Exception ex)
@@ -175,10 +168,8 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadComboBoxData()
         {
-            // Încarcă tipurile de camere pentru filtrare
             _roomTypes = await _roomTypeService.GetAllRoomTypesAsync();
 
-            // Populează dropdown pentru tipuri de camere
             cmbRoomType.Items.Clear();
             cmbRoomType.Items.Add("Toate tipurile");
 
@@ -189,7 +180,6 @@ namespace HotelManagement.Client.Forms
 
             cmbRoomType.SelectedIndex = 0;
 
-            // Populează dropdown pentru status
             cmbStatus.Items.Clear();
             cmbStatus.Items.Add("Toate statusurile");
             cmbStatus.Items.Add("Disponibilă");
@@ -204,26 +194,20 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Afișează panoul de încărcare
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Încarcă lista de camere
                 if (_hotelId.HasValue)
                 {
-                    // Încarcă doar camerele pentru hotelul specificat
                     _rooms = await _roomService.GetRoomsByHotelAsync(_hotelId.Value);
                 }
                 else
                 {
-                    // Încarcă toate camerele
                     _rooms = await _roomService.GetAllRoomsAsync();
                 }
 
-                // Aplică filtrele
                 ApplyFilters();
 
-                // Afișează panoul principal
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
             }
@@ -239,10 +223,8 @@ namespace HotelManagement.Client.Forms
         {
             if (_rooms == null) return;
 
-            // Începe cu toate camerele disponibile
             var filteredRooms = new List<RoomModel>(_rooms);
 
-            // Aplică filtrul pentru căutare text
             string searchText = txtSearch.Text.ToLower();
             if (!string.IsNullOrWhiteSpace(searchText))
             {
@@ -252,21 +234,18 @@ namespace HotelManagement.Client.Forms
                     r.RoomTypeName.ToLower().Contains(searchText));
             }
 
-            // Aplică filtrul pentru tipul de cameră
             if (cmbRoomType.SelectedIndex > 0)
             {
                 string selectedType = cmbRoomType.SelectedItem.ToString();
                 filteredRooms = filteredRooms.FindAll(r => r.RoomTypeName == selectedType);
             }
 
-            // Aplică filtrul pentru status
             if (cmbStatus.SelectedIndex > 0)
             {
                 string selectedStatus = cmbStatus.SelectedItem.ToString();
                 filteredRooms = filteredRooms.FindAll(r => r.Status == selectedStatus);
             }
 
-            // Actualizează DataGridView și eticheta
             dgvRooms.DataSource = null;
             dgvRooms.DataSource = filteredRooms;
             lblRecordCount.Text = $"Camere găsite: {filteredRooms.Count}" + (_rooms.Count != filteredRooms.Count ? $" din {_rooms.Count}" : "");
@@ -274,7 +253,6 @@ namespace HotelManagement.Client.Forms
 
         private void dgvRooms_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifică dacă s-a făcut clic pe un buton (coloană de acțiune)
             if (e.RowIndex >= 0)
             {
                 var rooms = dgvRooms.DataSource as List<RoomModel>;
@@ -282,16 +260,13 @@ namespace HotelManagement.Client.Forms
 
                 var selectedRoom = rooms[e.RowIndex];
 
-                // Verifică ce coloană de acțiune a fost apăsată
                 if (e.ColumnIndex == dgvRooms.Columns["Edit"].Index)
                 {
-                    // Deschide formularul de editare pentru camera selectată
                     var roomForm = new RoomForm(selectedRoom.Id);
                     ((MainForm)ParentForm).OpenChildForm(roomForm);
                 }
                 else if (e.ColumnIndex == dgvRooms.Columns["Delete"].Index)
                 {
-                    // Confirmă ștergerea
                     if (MessageBox.Show($"Sigur doriți să ștergeți camera '{selectedRoom.RoomNumber}'?",
                         "Confirmare ștergere", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
@@ -305,10 +280,8 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Șterge camera
                 await _roomService.DeleteRoomAsync(roomId);
 
-                // Reîncarcă lista de camere
                 await LoadRooms();
 
                 MessageBox.Show("Cameră ștearsă cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -321,7 +294,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
-            // Deschide formularul pentru adăugarea unei camere noi
             var roomForm = new RoomForm(null, _hotelId);
             ((MainForm)ParentForm).OpenChildForm(roomForm);
         }
@@ -348,7 +320,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            // Revine la lista de hoteluri
             ((MainForm)ParentForm).OpenChildForm(new HotelsListForm());
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using HotelManagement.Client.Models;
 using Newtonsoft.Json;
 
@@ -38,6 +39,42 @@ namespace HotelManagement.Client.Services
                 {
                     throw new Exception($"Error: {response.ReasonPhrase}");
                 }
+            }
+        }
+
+        public async Task<List<RoomModel>> GetAvailableRoomsByHotelAsync(int hotelId, int? roomTypeId, DateTime checkIn, DateTime checkOut)
+        {
+            try
+            {
+                string relativeUrl = $"rooms/available?hotelId={hotelId}&checkIn={checkIn:yyyy-MM-dd}&checkOut={checkOut:yyyy-MM-dd}";
+
+                if (roomTypeId.HasValue)
+                {
+                    relativeUrl += $"&roomTypeId={roomTypeId.Value}";
+                }
+
+                Console.WriteLine($"Trimitem request la: {ApiHelper.ApiClient.BaseAddress}{relativeUrl}");
+
+                var response = await ApiHelper.ApiClient.GetAsync(relativeUrl);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    throw new Exception($"Eroare API: {response.StatusCode}\nDetalii: {errorContent}");
+                }
+
+                var content = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Răspuns primit: {content}");
+
+                return JsonConvert.DeserializeObject<List<RoomModel>>(content) ?? new List<RoomModel>();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare gravă la obținerea camerelor: {ex.Message}",
+                              "Eroare API",
+                              MessageBoxButtons.OK,
+                              MessageBoxIcon.Error);
+                return new List<RoomModel>();
             }
         }
 

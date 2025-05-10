@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -143,6 +144,61 @@ namespace HotelManagement.WebAPI.Controllers
 
                 await _roomRepository.SetRoomStatusAsync(id, status.IsOccupied, status.IsClean, status.NeedsRepair);
                 return StatusCode(HttpStatusCode.NoContent);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
+
+        // GET: api/rooms/byHotel/5
+        [HttpGet]
+        [Route("byHotel/{hotelId:int}")]
+        public async Task<IHttpActionResult> GetRoomsByHotel(int hotelId)
+        {
+            try
+            {
+                var rooms = await _roomRepository.GetRoomsByHotelAsync(hotelId);
+                if (rooms == null || !rooms.Any())
+                {
+                    return NotFound();
+                }
+                return Ok(rooms);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
+        }
+
+        // GET: api/rooms/available?hotelId=1&roomTypeId=2&checkIn=2025-05-10&checkOut=2025-05-11
+        [HttpGet]
+        [Route("available")]
+        public async Task<IHttpActionResult> GetAvailableRooms(
+            [FromUri] int hotelId,
+            [FromUri] int? roomTypeId = null,
+            [FromUri] DateTime? checkIn = null,
+            [FromUri] DateTime? checkOut = null)
+        {
+            try
+            {
+                if (!checkIn.HasValue || !checkOut.HasValue)
+                {
+                    return BadRequest("Both checkIn and checkOut dates are required");
+                }
+
+                if (checkIn.Value >= checkOut.Value)
+                {
+                    return BadRequest("Check-out date must be after check-in date");
+                }
+
+                var rooms = await _roomRepository.GetAvailableRoomsAsync(
+                    hotelId,
+                    roomTypeId,
+                    checkIn.Value,
+                    checkOut.Value);
+
+                return Ok(rooms);
             }
             catch (Exception ex)
             {

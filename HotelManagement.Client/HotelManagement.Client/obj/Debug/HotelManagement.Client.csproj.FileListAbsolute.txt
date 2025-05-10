@@ -1,5 +1,16 @@
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\HotelManagement.Client.exe.config
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\HotelManagement.Client.exe
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\HotelManagement.Client.pdb
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\Newtonsoft.Json.dll
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\Newtonsoft.Json.xml
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\bin\Debug\System.Configuration.ConfigurationManager.xml
 D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.csproj.AssemblyReference.cache
 D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.Forms.RoomsListForm.resources
 D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.Properties.Resources.resources
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.Resources.resources
 D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.csproj.GenerateResource.cache
 D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.csproj.CoreCompileInputs.cache
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelMan.29689E58.Up2Date
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.exe
+D:\Teme II\HotelManagement\HotelManagement.Client\HotelManagement.Client\obj\Debug\HotelManagement.Client.pdb

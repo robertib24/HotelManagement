@@ -107,6 +107,54 @@ namespace HotelManagement.WebAPI.Repositories
             return !overlappingReservations;
         }
 
+        public async Task<IEnumerable<RoomDto>> GetAvailableRoomsAsync(int hotelId, int? roomTypeId, DateTime checkIn, DateTime checkOut)
+        {
+            _context.Configuration.ProxyCreationEnabled = false;
+            _context.Configuration.LazyLoadingEnabled = false;
+
+            var query = _context.Rooms
+                .AsNoTracking()
+                .Include(r => r.Hotel)
+                .Include(r => r.RoomType)
+                .Where(r => r.HotelId == hotelId &&
+                           !r.IsOccupied &&
+                           r.IsClean &&
+                           !r.NeedsRepair);
+
+            if (roomTypeId.HasValue)
+            {
+                query = query.Where(r => r.RoomTypeId == roomTypeId.Value);
+            }
+
+            var reservedRoomIds = await _context.Reservations
+                .Where(r => r.CheckInDate < checkOut &&
+                           r.CheckOutDate > checkIn &&
+                           r.ReservationStatus != "Cancelled")
+                .Select(r => r.RoomId)
+                .Distinct()
+                .ToListAsync();
+
+            var availableRooms = await query
+                .Where(r => !reservedRoomIds.Contains(r.Id))
+                .ToListAsync();
+
+            return availableRooms.Select(r => new RoomDto
+            {
+                Id = r.Id,
+                RoomNumber = r.RoomNumber,
+                HotelId = r.HotelId,
+                HotelName = r.Hotel.Name,
+                RoomTypeId = r.RoomTypeId,
+                RoomTypeName = r.RoomType.Name,
+                Floor = r.Floor,
+                Price = r.RoomType.BasePrice,
+                IsClean = r.IsClean,
+                IsOccupied = r.IsOccupied,
+                NeedsRepair = r.NeedsRepair,
+                Notes = r.Notes
+            });
+        }
+
         public async Task SetRoomStatusAsync(int roomId, bool isOccupied, bool isClean, bool needsRepair)
         {
             var room = await _context.Rooms.FindAsync(roomId);

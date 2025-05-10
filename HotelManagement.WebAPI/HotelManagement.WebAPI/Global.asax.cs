@@ -12,7 +12,7 @@ namespace HotelManagement.WebAPI
     public class WebApiApplication : HttpApplication
     {
         protected void Application_Start()
-        {
+        {   
             // Initialize database
             Database.SetInitializer(new DbInitializer());
 

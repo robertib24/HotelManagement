@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = null;
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panelReportsSubmenu = new System.Windows.Forms.Panel();
             this.btnRevenueReport = new System.Windows.Forms.Button();
@@ -664,7 +664,7 @@
             // pictureBoxLogo
             // 
             this.pictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
+            this.pictureBoxLogo.Image = null;
             this.pictureBoxLogo.Location = new System.Drawing.Point(267, 176);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(150, 150);

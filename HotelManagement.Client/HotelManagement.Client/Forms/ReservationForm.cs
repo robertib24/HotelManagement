@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -212,56 +213,57 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadAvailableRooms()
         {
-            if (_selectedHotelId.HasValue)
+            if (!_selectedHotelId.HasValue) return;
+
+            try
             {
-                try
+                LoadingPanel.Visible = true;
+                lblAvailableRooms.Text = "Se încarcă...";
+                cmbRoom.DataSource = null;
+                cmbRoom.Refresh();
+
+                // Obține camerele disponibile
+                _availableRooms = await _roomService.GetAvailableRoomsByHotelAsync(
+                    _selectedHotelId.Value,
+                    _selectedRoomTypeId,
+                    _checkInDate,
+                    _checkOutDate);
+
+                // În modul editare, adaugă camera curentă
+                if (_isEditMode && _selectedRoomId.HasValue)
                 {
-                    // Obține toate camerele hotelului
-                    var allRooms = await _roomService.GetRoomsByHotelAsync(_selectedHotelId.Value);
-
-                    // Filtrează camerele după tipul selectat, dacă este cazul
-                    if (_selectedRoomTypeId.HasValue)
+                    var currentRoom = _availableRooms.FirstOrDefault(r => r.Id == _selectedRoomId.Value);
+                    if (currentRoom == null)
                     {
-                        allRooms = allRooms.FindAll(r => r.RoomTypeId == _selectedRoomTypeId.Value);
-                    }
-
-                    // Verifică disponibilitatea camerelor pentru perioada selectată, exceptând camera curentă dacă este în modul de editare
-                    _availableRooms = new List<RoomModel>();
-
-                    foreach (var room in allRooms)
-                    {
-                        // În modul de editare, includem și camera curent selectată
-                        if (_isEditMode && room.Id == _selectedRoomId)
+                        var allRooms = await _roomService.GetRoomsByHotelAsync(_selectedHotelId.Value);
+                        currentRoom = allRooms?.FirstOrDefault(r => r.Id == _selectedRoomId.Value);
+                        if (currentRoom != null)
                         {
-                            _availableRooms.Add(room);
-                            continue;
-                        }
-
-                        // Verifică disponibilitatea camerei
-                        bool isAvailable = await _roomService.IsRoomAvailableAsync(room.Id, _checkInDate, _checkOutDate);
-                        if (isAvailable)
-                        {
-                            _availableRooms.Add(room);
+                            _availableRooms.Insert(0, currentRoom);
                         }
                     }
-
-                    // Actualizează dropdown-ul cu camerele disponibile
-                    cmbRoom.DataSource = null;
-                    cmbRoom.DataSource = _availableRooms;
-
-                    // Actualizează eticheta cu numărul de camere disponibile
-                    lblAvailableRooms.Text = $"Camere disponibile: {_availableRooms.Count}";
-
-                    // Dacă nu sunt camere disponibile, afișează un mesaj
-                    if (_availableRooms.Count == 0)
-                    {
-                        MessageBox.Show("Nu există camere disponibile pentru criteriile selectate!", "Informație", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
                 }
-                catch (Exception ex)
+
+                // Actualizează UI
+                cmbRoom.DataSource = _availableRooms;
+                lblAvailableRooms.Text = $"Camere disponibile: {_availableRooms.Count}";
+
+                if (_availableRooms.Count == 0)
                 {
-                    MessageBox.Show($"Eroare la încărcarea camerelor disponibile: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Nu există camere disponibile conform criteriilor:\n" +
+                                  $"• Hotel: {cmbHotel.SelectedItem}\n" +
+                                  $"• Tip cameră: {cmbRoomType.SelectedItem}\n" +
+                                  $"• Perioadă: {_checkInDate:d} - {_checkOutDate:d}",
+                                  "Informație", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Eroare: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                LoadingPanel.Visible = false;
             }
         }
 

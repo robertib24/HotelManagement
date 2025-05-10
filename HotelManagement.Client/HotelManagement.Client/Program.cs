@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Threading;
+using System.Globalization;
 using System.Windows.Forms;
 using HotelManagement.Client.Services;
 
@@ -15,6 +16,10 @@ namespace HotelManagement.Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // Setează cultura la invariant pentru a evita probleme de localizare
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
             try
             {

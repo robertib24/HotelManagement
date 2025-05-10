@@ -25,6 +25,10 @@ namespace HotelManagement.Client.Forms
         {
             InitializeComponent();
 
+            // DPI settings for better scaling
+            this.AutoScaleDimensions = new SizeF(96F, 96F);
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+
             _hotelService = new HotelService();
             _reservationService = new ReservationService();
             _customerService = new CustomerService();
@@ -34,28 +38,34 @@ namespace HotelManagement.Client.Forms
 
         private async void DashboardForm_Load(object sender, EventArgs e)
         {
+            // Suspend layout to prevent flickering
+            this.SuspendLayout();
+
+            // Initially hide the main panel
+            MainPanel.Visible = false;
+            LoadingPanel.Visible = true;
+
             await LoadDashboardData();
+
+            // Resume layout
+            this.ResumeLayout(false);
         }
 
         private async Task LoadDashboardData()
         {
             try
             {
-                // Activează indicatorul de încărcare
-                LoadingPanel.Visible = true;
-                MainPanel.Visible = false;
-
-                // Încarcă datele pentru dashboard
+                // Load data for dashboard
                 await Task.WhenAll(
                     LoadRoomsData(),
                     LoadCustomersData(),
                     LoadReservationsData()
                 );
 
-                // Actualizează controalele UI
+                // Update UI controls
                 UpdateDashboardUI();
 
-                // Dezactivează indicatorul de încărcare
+                // Show main panel
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
             }
@@ -69,7 +79,7 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadRoomsData()
         {
-            // Încarcă toate hotelurile pentru a obține numărul total de camere
+            // Load hotel data
             List<HotelModel> hotels = await _hotelService.GetAllHotelsAsync();
 
             _totalRooms = 0;
@@ -86,18 +96,18 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadCustomersData()
         {
-            // Încarcă toți clienții pentru a obține numărul total
+            // Load customer data
             List<CustomerModel> customers = await _customerService.GetAllCustomersAsync();
             _customersCount = customers.Count;
         }
 
         private async Task LoadReservationsData()
         {
-            // Încarcă check-in-urile pentru azi pentru a obține numărul de rezervări pentru ziua curentă
+            // Load reservation data
             List<ReservationModel> checkIns = await _reservationService.GetCheckInsForTodayAsync();
             _reservationsToday = checkIns.Count;
 
-            // Calculează venitul pentru ziua curentă (suma prețurilor pentru check-in-urile din ziua curentă)
+            // Calculate revenue
             _revenueToday = 0;
             foreach (var reservation in checkIns)
             {
@@ -107,7 +117,7 @@ namespace HotelManagement.Client.Forms
 
         private void UpdateDashboardUI()
         {
-            // Actualizează etichetele cu date
+            // Update labels with data
             lblTotalRooms.Text = _totalRooms.ToString();
             lblOccupiedRooms.Text = _occupiedRooms.ToString();
             lblAvailableRooms.Text = _availableRooms.ToString();
@@ -115,23 +125,23 @@ namespace HotelManagement.Client.Forms
             lblReservationsToday.Text = _reservationsToday.ToString();
             lblRevenueToday.Text = $"{_revenueToday:N2} RON";
 
-            // Actualizează ora și data curentă
+            // Update current date/time
             lblCurrentDateTime.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
 
-            // Actualizează procentul de ocupare și diagrama
+            // Update occupancy rate and progress bar
             float occupancyRate = _totalRooms > 0 ? (float)_occupiedRooms / _totalRooms * 100 : 0;
             lblOccupancyRate.Text = $"{occupancyRate:N1}%";
 
-            // Setează culori pentru diagrama de ocupare
+            // Ensure occupancy rate doesn't exceed 100 for progress bar
+            prgOccupancyRate.Value = Math.Min((int)occupancyRate, 100);
+
+            // Set colors based on occupancy rate
             if (occupancyRate < 30)
                 lblOccupancyRate.ForeColor = Color.DarkGreen;
             else if (occupancyRate < 70)
                 lblOccupancyRate.ForeColor = Color.DarkOrange;
             else
                 lblOccupancyRate.ForeColor = Color.DarkRed;
-
-            // Actualizează graficul de ocupare (reprezentat printr-un ProgressBar)
-            prgOccupancyRate.Value = (int)occupancyRate;
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -139,22 +149,22 @@ namespace HotelManagement.Client.Forms
             LoadDashboardData();
         }
 
+        private void btnNewReservation_Click(object sender, EventArgs e)
+        {
+            // Open reservation form
+            ((MainForm)ParentForm).OpenChildForm(new ReservationForm());
+        }
+
         private void btnCheckInsToday_Click(object sender, EventArgs e)
         {
-            // Deschide formularul pentru check-in-urile de azi
+            // Open check-in form
             ((MainForm)ParentForm).OpenChildForm(new CheckInsForm());
         }
 
         private void btnCheckOutsToday_Click(object sender, EventArgs e)
         {
-            // Deschide formularul pentru check-out-urile de azi
+            // Open check-out form
             ((MainForm)ParentForm).OpenChildForm(new CheckOutsForm());
-        }
-
-        private void btnNewReservation_Click(object sender, EventArgs e)
-        {
-            // Deschide formularul pentru adăugarea unei noi rezervări
-            ((MainForm)ParentForm).OpenChildForm(new ReservationForm());
         }
     }
 }

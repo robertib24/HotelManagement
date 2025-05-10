@@ -1,4 +1,5 @@
-﻿using System.Web.Http;
+﻿using System.Net.Http.Headers;
+using System.Web.Http;
 using System.Web.Http.Cors;
 using HotelManagement.WebAPI;
 using Newtonsoft.Json;
@@ -19,6 +20,10 @@ namespace HotelManagement.WebAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+            config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Never;
+            config.Formatters.JsonFormatter.SupportedMediaTypes
+       .Add(new MediaTypeHeaderValue("text/html"));
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

@@ -199,8 +199,10 @@
     <Compile Include="Controllers\HotelsController.cs" />
     <Compile Include="Controllers\ReservationsController.cs" />
     <Compile Include="Controllers\RoomsController.cs" />
+    <Compile Include="Controllers\RoomTypeController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Data\DatabaseSeeder.cs" />
     <Compile Include="Data\DbInitializer.cs" />
     <Compile Include="Data\HotelDbContext.cs" />
     <Compile Include="DTOs\CustomerDto.cs" />

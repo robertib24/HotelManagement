@@ -16,6 +16,8 @@ namespace HotelManagement.Client
             CustomizeDesign();
         }
 
+       
+
         private void CustomizeDesign()
         {
             // Ascunde submenurile la inițializare

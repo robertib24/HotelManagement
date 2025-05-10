@@ -204,8 +204,32 @@ namespace HotelManagement.Client.Forms
                 }
 
                 // Revine la lista de camere
-                int? hotelId = _preselectedHotelId ?? (_isEditMode ? _room.HotelId : null);
-                string hotelName = hotelId.HasValue ? ((HotelModel)cmbHotel.SelectedItem).Name : null;
+                // FIX: Înlocuirea operatorului ?? cu logică condițională explicită
+                int? hotelId;
+                if (_preselectedHotelId.HasValue)
+                {
+                    hotelId = _preselectedHotelId.Value;
+                }
+                else if (_isEditMode)
+                {
+                    hotelId = _room.HotelId;
+                }
+                else
+                {
+                    hotelId = null;
+                }
+
+                // FIX: Înlocuirea condiției ternare cu verificare explicită
+                string hotelName = null;
+                if (hotelId.HasValue)
+                {
+                    HotelModel selectedHotel = (HotelModel)cmbHotel.SelectedItem;
+                    if (selectedHotel != null)
+                    {
+                        hotelName = selectedHotel.Name;
+                    }
+                }
+
                 ((MainForm)ParentForm).OpenChildForm(new RoomsListForm(hotelId, hotelName));
             }
             catch (Exception ex)
@@ -244,8 +268,28 @@ namespace HotelManagement.Client.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             // Revine la lista de camere
-            int? hotelId = _preselectedHotelId ?? (_isEditMode ? _room.HotelId : null);
-            string hotelName = hotelId.HasValue ? _room.HotelName : null;
+            // FIX: Înlocuirea operatorului ?? cu logică condițională explicită
+            int? hotelId;
+            if (_preselectedHotelId.HasValue)
+            {
+                hotelId = _preselectedHotelId.Value;
+            }
+            else if (_isEditMode)
+            {
+                hotelId = _room.HotelId;
+            }
+            else
+            {
+                hotelId = null;
+            }
+
+            // FIX: Înlocuirea condiției ternare cu verificare explicită
+            string hotelName = null;
+            if (hotelId.HasValue && _isEditMode && _room != null)
+            {
+                hotelName = _room.HotelName;
+            }
+
             ((MainForm)ParentForm).OpenChildForm(new RoomsListForm(hotelId, hotelName));
         }
 
