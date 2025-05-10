@@ -100,6 +100,18 @@
     <Compile Include="Forms\CheckOutsForm.Designer.cs">
       <DependentUpon>CheckOutsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CustomersListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CustomersListForm.Designer.cs">
+      <DependentUpon>CustomersListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,11 +130,35 @@
     <Compile Include="Forms\HotelListForm.Designer.cs">
       <DependentUpon>HotelListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InvoicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InvoicesForm.Designer.cs">
+      <DependentUpon>InvoicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OccupanyReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OccupanyReportForm.Designer.cs">
+      <DependentUpon>OccupanyReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ReservationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ReservationForm.Designer.cs">
       <DependentUpon>ReservationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReservationsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReservationsListForm.Designer.cs">
+      <DependentUpon>ReservationsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RevenueReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RevenueReportForm.Designer.cs">
+      <DependentUpon>RevenueReportForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\RoomForm.cs">
       <SubType>Form</SubType>
@@ -135,6 +171,30 @@
     </Compile>
     <Compile Include="Forms\RoomsListForm.Designer.cs">
       <DependentUpon>RoomsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RoomTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RoomTypesForm.Designer.cs">
+      <DependentUpon>RoomTypesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServiceForm.Designer.cs">
+      <DependentUpon>ServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ServicesListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ServicesListForm.Designer.cs">
+      <DependentUpon>ServicesListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VIPCustomersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VIPCustomersForm.Designer.cs">
+      <DependentUpon>VIPCustomersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
