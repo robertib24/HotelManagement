@@ -25,7 +25,6 @@ namespace HotelManagement.Client.Forms
             _customerId = customerId;
             _hotelId = hotelId;
 
-            // Set form title based on parameters
             if (_customerId.HasValue)
             {
                 this.Text = "Customer Reservations";
@@ -42,13 +41,11 @@ namespace HotelManagement.Client.Forms
                 lblTitle.Text = "All Reservations";
             }
 
-            // Setup DataGridView
             SetupDataGridView();
         }
 
         private void SetupDataGridView()
         {
-            // Configure DataGridView
             dgvReservations.AutoGenerateColumns = false;
             dgvReservations.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvReservations.MultiSelect = false;
@@ -58,7 +55,6 @@ namespace HotelManagement.Client.Forms
             dgvReservations.AllowUserToOrderColumns = true;
             dgvReservations.AllowUserToResizeRows = false;
 
-            // Styling
             dgvReservations.BackgroundColor = Color.FromArgb(45, 45, 60);
             dgvReservations.BorderStyle = BorderStyle.None;
             dgvReservations.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -82,7 +78,6 @@ namespace HotelManagement.Client.Forms
             dgvReservations.RowHeadersVisible = false;
             dgvReservations.RowTemplate.Height = 35;
 
-            // Define columns
             dgvReservations.Columns.Clear();
 
             dgvReservations.Columns.Add(new DataGridViewTextBoxColumn
@@ -528,10 +523,8 @@ namespace HotelManagement.Client.Forms
                 return;
             }
 
-            // Start with all reservations
             var filteredReservations = new List<ReservationModel>(_reservations);
 
-            // Apply status filter if needed
             if (cmbStatus.SelectedIndex > 0)
             {
                 string selectedStatus = cmbStatus.SelectedItem.ToString();
@@ -550,14 +543,12 @@ namespace HotelManagement.Client.Forms
                 }
             }
 
-            // Apply text filter
             filteredReservations = filteredReservations.FindAll(r =>
                 r.CustomerName.ToLower().Contains(searchText) ||
                 r.HotelName.ToLower().Contains(searchText) ||
                 r.RoomNumber.ToLower().Contains(searchText) ||
                 r.Notes != null && r.Notes.ToLower().Contains(searchText));
 
-            // Update DataGridView and label
             dgvReservations.DataSource = null;
             dgvReservations.DataSource = filteredReservations;
             lblRecordCount.Text = $"Reservations found: {filteredReservations.Count} of {_reservations.Count}";

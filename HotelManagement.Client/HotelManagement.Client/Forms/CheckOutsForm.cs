@@ -21,13 +21,11 @@ namespace HotelManagement.Client.Forms
 
             this.Text = "Check-Out Astăzi";
 
-            // Setări pentru DataGridView
             SetupDataGridView();
         }
 
         private void SetupDataGridView()
         {
-            // Configurare DataGridView
             dgvCheckOuts.AutoGenerateColumns = false;
             dgvCheckOuts.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCheckOuts.MultiSelect = false;
@@ -37,7 +35,6 @@ namespace HotelManagement.Client.Forms
             dgvCheckOuts.AllowUserToOrderColumns = true;
             dgvCheckOuts.AllowUserToResizeRows = false;
 
-            // Stilizare
             dgvCheckOuts.BackgroundColor = Color.FromArgb(45, 45, 60);
             dgvCheckOuts.BorderStyle = BorderStyle.None;
             dgvCheckOuts.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -61,7 +58,6 @@ namespace HotelManagement.Client.Forms
             dgvCheckOuts.RowHeadersVisible = false;
             dgvCheckOuts.RowTemplate.Height = 35;
 
-            // Definire coloane
             dgvCheckOuts.Columns.Clear();
 
             dgvCheckOuts.Columns.Add(new DataGridViewTextBoxColumn
@@ -136,7 +132,6 @@ namespace HotelManagement.Client.Forms
                 Width = 100
             });
 
-            // Adaugă coloană pentru butonul de check-out
             var checkOutColumn = new DataGridViewButtonColumn
             {
                 Name = "CheckOut",
@@ -148,7 +143,6 @@ namespace HotelManagement.Client.Forms
             };
             dgvCheckOuts.Columns.Add(checkOutColumn);
 
-            // Adaugă coloană pentru butonul de facturare
             var invoiceColumn = new DataGridViewButtonColumn
             {
                 Name = "Invoice",
@@ -170,22 +164,17 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Afișează panoul de încărcare
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Încarcă lista de check-out-uri pentru astăzi
                 _checkOuts = await _reservationService.GetCheckOutsForTodayAsync();
 
-                // Leagă datele la DataGridView
                 dgvCheckOuts.DataSource = null;
                 dgvCheckOuts.DataSource = _checkOuts;
 
-                // Afișează panoul principal
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
 
-                // Actualizează eticheta cu numărul de înregistrări
                 lblRecordCount.Text = $"Total check-out-uri pentru astăzi: {_checkOuts.Count}";
             }
             catch (Exception ex)
@@ -198,15 +187,12 @@ namespace HotelManagement.Client.Forms
 
         private async void dgvCheckOuts_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifică dacă s-a făcut clic pe un buton (coloană de acțiune)
             if (e.RowIndex >= 0)
             {
                 var selectedReservation = _checkOuts[e.RowIndex];
 
-                // Verifică ce coloană de acțiune a fost apăsată
                 if (e.ColumnIndex == dgvCheckOuts.Columns["CheckOut"].Index)
                 {
-                    // Confirmă check-out-ul
                     if (MessageBox.Show($"Sigur doriți să efectuați check-out pentru rezervarea {selectedReservation.Id}?",
                         "Confirmare Check-Out", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
@@ -215,7 +201,6 @@ namespace HotelManagement.Client.Forms
                 }
                 else if (e.ColumnIndex == dgvCheckOuts.Columns["Invoice"].Index)
                 {
-                    // Generează factura pentru rezervarea selectată
                     await GenerateInvoice(selectedReservation.Id);
                 }
             }
@@ -225,10 +210,8 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Efectuează check-out pentru rezervare
                 await _reservationService.CheckOutAsync(reservationId);
 
-                // Reîncarcă lista de check-out-uri
                 await LoadCheckOuts();
 
                 MessageBox.Show("Check-out efectuat cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -243,13 +226,11 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Deschide formularul pentru facturi cu rezervarea selectată
                 InvoiceService invoiceService = new InvoiceService();
                 var invoice = await invoiceService.GenerateInvoiceAsync(reservationId);
 
                 MessageBox.Show($"Factură generată cu succes! Număr factură: {invoice.InvoiceNumber}", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Deschide formularul pentru facturi
                 ((MainForm)ParentForm).OpenChildForm(new InvoicesForm(invoice.Id));
             }
             catch (Exception ex)

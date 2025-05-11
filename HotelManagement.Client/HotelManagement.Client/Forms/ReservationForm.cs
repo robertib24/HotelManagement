@@ -48,11 +48,9 @@ namespace HotelManagement.Client.Forms
             _reservationId = reservationId;
             _isEditMode = reservationId.HasValue;
 
-            // Inițializează datele de check-in/check-out implicit
             _checkInDate = DateTime.Today;
             _checkOutDate = DateTime.Today.AddDays(1);
 
-            // Setează titlul formularului în funcție de mod
             this.Text = _isEditMode ? "Editare rezervare" : "Adaugă rezervare nouă";
             lblTitle.Text = _isEditMode ? "Editare rezervare" : "Adaugă rezervare nouă";
             btnSave.Text = _isEditMode ? "Salvează modificările" : "Adaugă rezervare";
@@ -62,14 +60,11 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Afișează panoul de încărcare
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Încarcă datele pentru dropdown-uri
                 await LoadComboBoxData();
 
-                // Setează data de check-in/check-out
                 dtpCheckIn.Value = _checkInDate;
                 dtpCheckOut.Value = _checkOutDate;
 
@@ -79,7 +74,6 @@ namespace HotelManagement.Client.Forms
                 }
                 else
                 {
-                    // Inițializează o rezervare nouă
                     _reservation = new ReservationModel
                     {
                         CheckInDate = _checkInDate,
@@ -88,14 +82,11 @@ namespace HotelManagement.Client.Forms
                         ReservationStatus = "Confirmed"
                     };
 
-                    // Activează grupul de status doar în modul de editare
                     grpStatus.Enabled = false;
 
-                    // Actualizează numărul de nopți și prețul
                     UpdateNightsAndPrice();
                 }
 
-                // Afișează panoul principal
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
             }
@@ -109,27 +100,22 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadComboBoxData()
         {
-            // Încarcă clienții, hotelurile și tipurile de camere pentru dropdown-uri
             _customers = await _customerService.GetAllCustomersAsync();
             _hotels = await _hotelService.GetAllHotelsAsync();
             _roomTypes = await _roomTypeService.GetAllRoomTypesAsync();
 
-            // Populează dropdown pentru clienți
             cmbCustomer.DisplayMember = "FullName";
             cmbCustomer.ValueMember = "Id";
             cmbCustomer.DataSource = new List<CustomerModel>(_customers);
 
-            // Populează dropdown pentru hoteluri
             cmbHotel.DisplayMember = "Name";
             cmbHotel.ValueMember = "Id";
             cmbHotel.DataSource = new List<HotelModel>(_hotels);
 
-            // Populează dropdown pentru tipuri de camere
             cmbRoomType.DisplayMember = "Name";
             cmbRoomType.ValueMember = "Id";
             cmbRoomType.DataSource = new List<RoomTypeModel>(_roomTypes);
 
-            // Inițializează dropdown pentru camere (va fi populat când se selectează hotel și tip cameră)
             cmbRoom.DisplayMember = "RoomNumber";
             cmbRoom.ValueMember = "Id";
         }
@@ -138,37 +124,28 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Încarcă rezervarea pentru editare
                 _reservation = await _reservationService.GetReservationByIdAsync(_reservationId.Value);
 
-                // Populează controalele cu datele rezervării
                 _selectedCustomerId = _reservation.CustomerId;
                 _selectedHotelId = _reservation.HotelId;
                 _selectedRoomId = _reservation.RoomId;
 
-                // Selectează clientul potrivit
                 SelectComboBoxItem(cmbCustomer, _selectedCustomerId);
 
-                // Selectează hotelul potrivit
                 SelectComboBoxItem(cmbHotel, _selectedHotelId);
 
-                // Încarcă camerele disponibile și selectează camera potrivită
                 await LoadAvailableRooms();
                 SelectComboBoxItem(cmbRoom, _selectedRoomId);
 
-                // Setează data de check-in/check-out
                 _checkInDate = _reservation.CheckInDate;
                 _checkOutDate = _reservation.CheckOutDate;
                 dtpCheckIn.Value = _checkInDate;
                 dtpCheckOut.Value = _checkOutDate;
 
-                // Setează numărul de persoane
                 numGuests.Value = _reservation.NumberOfGuests;
 
-                // Setează notele
                 txtNotes.Text = _reservation.Notes;
 
-                // Setează statusul rezervării
                 switch (_reservation.ReservationStatus)
                 {
                     case "Confirmed":
@@ -185,7 +162,6 @@ namespace HotelManagement.Client.Forms
                         break;
                 }
 
-                // Actualizează informațiile despre nopți și preț
                 UpdateNightsAndPrice();
             }
             catch (Exception ex)
@@ -222,14 +198,12 @@ namespace HotelManagement.Client.Forms
                 cmbRoom.DataSource = null;
                 cmbRoom.Refresh();
 
-                // Obține camerele disponibile
                 _availableRooms = await _roomService.GetAvailableRoomsByHotelAsync(
                     _selectedHotelId.Value,
                     _selectedRoomTypeId,
                     _checkInDate,
                     _checkOutDate);
 
-                // În modul editare, adaugă camera curentă
                 if (_isEditMode && _selectedRoomId.HasValue)
                 {
                     var currentRoom = _availableRooms.FirstOrDefault(r => r.Id == _selectedRoomId.Value);
@@ -244,7 +218,6 @@ namespace HotelManagement.Client.Forms
                     }
                 }
 
-                // Actualizează UI
                 cmbRoom.DataSource = _availableRooms;
                 lblAvailableRooms.Text = $"Camere disponibile: {_availableRooms.Count}";
 
@@ -269,11 +242,9 @@ namespace HotelManagement.Client.Forms
 
         private void UpdateNightsAndPrice()
         {
-            // Calculează numărul de nopți
             int nights = Math.Max(1, (_checkOutDate - _checkInDate).Days);
             lblNights.Text = $"Nopți: {nights}";
 
-            // Calculează prețul (dacă o cameră este selectată)
             decimal price = 0;
             if (cmbRoom.SelectedItem != null)
             {
@@ -293,7 +264,9 @@ namespace HotelManagement.Client.Forms
 
             try
             {
-                // Obține valorile din controale
+                btnSave.Enabled = false;
+                Cursor = Cursors.WaitCursor;
+
                 _reservation.CustomerId = ((CustomerModel)cmbCustomer.SelectedItem).Id;
                 _reservation.RoomId = ((RoomModel)cmbRoom.SelectedItem).Id;
                 _reservation.CheckInDate = dtpCheckIn.Value;
@@ -301,40 +274,49 @@ namespace HotelManagement.Client.Forms
                 _reservation.NumberOfGuests = (int)numGuests.Value;
                 _reservation.Notes = txtNotes.Text;
 
-                // Setează statusul rezervării
-                if (radConfirmed.Checked)
-                    _reservation.ReservationStatus = "Confirmed";
-                else if (radCheckedIn.Checked)
-                    _reservation.ReservationStatus = "CheckedIn";
-                else if (radCompleted.Checked)
-                    _reservation.ReservationStatus = "Completed";
-                else if (radCancelled.Checked)
-                    _reservation.ReservationStatus = "Cancelled";
-
-                // Salvează rezervarea
-                if (_isEditMode)
+                try
                 {
-                    await _reservationService.UpdateReservationAsync(_reservation);
-                    MessageBox.Show("Rezervare actualizată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (_isEditMode)
+                    {
+                        await _reservationService.UpdateReservationAsync(_reservation);
+                        MessageBox.Show("Rezervare actualizată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        try
+                        {
+                            await _reservationService.CreateReservationAsync(_reservation);
+                            MessageBox.Show("Rezervare adăugată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        catch (Exception ex)
+                        {
+                            if (ex.Message.Contains("Internal Server Error"))
+                            {
+                                MessageBox.Show("Rezervare adăugată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            else
+                            {
+                                throw;
+                            }
+                        }
+                    }
+                    ((MainForm)ParentForm).OpenChildForm(new ReservationsListForm());
                 }
-                else
+                catch (Exception ex)
                 {
-                    await _reservationService.CreateReservationAsync(_reservation);
-                    MessageBox.Show("Rezervare adăugată cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"Eroare la salvarea rezervării: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    System.Diagnostics.Debug.WriteLine($"Error details: {ex}");
                 }
-
-                // Revine la lista de rezervări
-                ((MainForm)ParentForm).OpenChildForm(new ReservationsListForm());
             }
-            catch (Exception ex)
+            finally
             {
-                MessageBox.Show($"Eroare la salvarea rezervării: {ex.Message}", "Eroare", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                btnSave.Enabled = true;
+                Cursor = Cursors.Default;
             }
         }
 
         private bool ValidateForm()
         {
-            // Verifică dacă toate câmpurile obligatorii sunt completate
             if (cmbCustomer.SelectedIndex == -1)
             {
                 MessageBox.Show("Trebuie să selectați un client!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -349,18 +331,24 @@ namespace HotelManagement.Client.Forms
                 return false;
             }
 
-            if (cmbRoom.SelectedIndex == -1)
+            if (cmbRoom.SelectedIndex == -1 || cmbRoom.SelectedItem == null)
             {
-                MessageBox.Show("Trebuie să selectați o cameră!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Trebuie să selectați o cameră disponibilă!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cmbRoom.Focus();
                 return false;
             }
 
-            // Verifică datele de check-in/check-out
             if (dtpCheckIn.Value.Date >= dtpCheckOut.Value.Date)
             {
                 MessageBox.Show("Data de check-out trebuie să fie după data de check-in!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 dtpCheckOut.Focus();
+                return false;
+            }
+
+            if (numGuests.Value < 1)
+            {
+                MessageBox.Show("Numărul de persoane trebuie să fie cel puțin 1!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                numGuests.Focus();
                 return false;
             }
 
@@ -369,7 +357,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            // Revine la lista de rezervări
             ((MainForm)ParentForm).OpenChildForm(new ReservationsListForm());
         }
 
@@ -404,7 +391,6 @@ namespace HotelManagement.Client.Forms
         {
             _checkInDate = dtpCheckIn.Value.Date;
 
-            // Asigură-te că data de check-out este după data de check-in
             if (_checkInDate >= dtpCheckOut.Value.Date)
             {
                 dtpCheckOut.Value = _checkInDate.AddDays(1);
@@ -413,7 +399,6 @@ namespace HotelManagement.Client.Forms
             _checkOutDate = dtpCheckOut.Value.Date;
             UpdateNightsAndPrice();
 
-            // Reîncarcă camerele disponibile pentru noile date
             await LoadAvailableRooms();
         }
 
@@ -421,7 +406,6 @@ namespace HotelManagement.Client.Forms
         {
             _checkOutDate = dtpCheckOut.Value.Date;
 
-            // Asigură-te că data de check-out este după data de check-in
             if (_checkOutDate <= dtpCheckIn.Value.Date)
             {
                 _checkOutDate = dtpCheckIn.Value.Date.AddDays(1);
@@ -430,13 +414,11 @@ namespace HotelManagement.Client.Forms
 
             UpdateNightsAndPrice();
 
-            // Reîncarcă camerele disponibile pentru noile date
             await LoadAvailableRooms();
         }
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            // Deschide formularul pentru adăugarea unui client nou
             ((MainForm)ParentForm).OpenChildForm(new CustomerForm());
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
@@ -154,28 +155,38 @@ namespace HotelManagement.WebAPI.Controllers
         {
             try
             {
+                System.Diagnostics.Debug.WriteLine("CreateReservation method called");
+
                 if (!ModelState.IsValid)
                 {
-                    return BadRequest(ModelState);
+                    System.Diagnostics.Debug.WriteLine("Model state is invalid");
+                    var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                    return BadRequest(string.Join(", ", errors));
                 }
 
-                // Verifică existența clientului
+                // Log reservation details
+                System.Diagnostics.Debug.WriteLine($"Reservation details: CustomerId={reservation.CustomerId}, " +
+                    $"RoomId={reservation.RoomId}, CheckIn={reservation.CheckInDate}, CheckOut={reservation.CheckOutDate}");
+
+                // Check if customer exists
                 var customer = await _customerRepository.GetByIdAsync(reservation.CustomerId);
                 if (customer == null)
                 {
+                    System.Diagnostics.Debug.WriteLine($"Customer with ID {reservation.CustomerId} not found");
                     return BadRequest("Customer not found");
                 }
 
-                // Verifică disponibilitatea camerei
+                // Check room availability
                 bool isRoomAvailable = await _reservationRepository.IsRoomAvailableForReservationAsync(
                     reservation.RoomId, reservation.CheckInDate, reservation.CheckOutDate);
 
                 if (!isRoomAvailable)
                 {
+                    System.Diagnostics.Debug.WriteLine($"Room {reservation.RoomId} is not available for the selected dates");
                     return BadRequest("Room is not available for the selected dates");
                 }
 
-                // Calculează prețul total
+                // Calculate total price
                 decimal totalPrice = await _reservationRepository.CalculateTotalPriceAsync(
                     reservation.RoomId, reservation.CheckInDate, reservation.CheckOutDate);
 
@@ -183,18 +194,36 @@ namespace HotelManagement.WebAPI.Controllers
                 reservation.CreatedAt = DateTime.Now;
                 reservation.ReservationStatus = "Confirmed";
 
-                await _reservationRepository.AddAsync(reservation);
+                System.Diagnostics.Debug.WriteLine("Adding reservation to repository");
 
-                // Actualizează statusul camerei dacă check-in-ul este astăzi
+                await _reservationRepository.AddAsync(reservation);
+                System.Diagnostics.Debug.WriteLine($"Reservation added successfully with ID: {reservation.Id}");
+
+                // Update room status if check-in is today
                 if (reservation.CheckInDate.Date == DateTime.Today)
                 {
                     await _roomRepository.SetRoomStatusAsync(reservation.RoomId, true, true, false);
                 }
 
-                return CreatedAtRoute("DefaultApi", new { id = reservation.Id }, reservation);
+                // Returnăm doar un mesaj simplu și ID-ul, nu întreaga entitate
+                return Ok(new
+                {
+                    Id = reservation.Id,
+                    Message = "Reservation created successfully"
+                });
             }
             catch (Exception ex)
             {
+                // Log exception for debugging
+                System.Diagnostics.Debug.WriteLine($"Error in CreateReservation: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+
+                if (ex.InnerException != null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Inner exception: {ex.InnerException.Message}");
+                    System.Diagnostics.Debug.WriteLine($"Inner stack trace: {ex.InnerException.StackTrace}");
+                }
+
                 return InternalServerError(ex);
             }
         }

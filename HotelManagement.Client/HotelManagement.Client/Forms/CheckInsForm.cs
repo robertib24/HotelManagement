@@ -21,13 +21,11 @@ namespace HotelManagement.Client.Forms
 
             this.Text = "Check-In Astăzi";
 
-            // Setări pentru DataGridView
             SetupDataGridView();
         }
 
         private void SetupDataGridView()
         {
-            // Configurare DataGridView
             dgvCheckIns.AutoGenerateColumns = false;
             dgvCheckIns.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCheckIns.MultiSelect = false;
@@ -37,7 +35,6 @@ namespace HotelManagement.Client.Forms
             dgvCheckIns.AllowUserToOrderColumns = true;
             dgvCheckIns.AllowUserToResizeRows = false;
 
-            // Stilizare
             dgvCheckIns.BackgroundColor = Color.FromArgb(45, 45, 60);
             dgvCheckIns.BorderStyle = BorderStyle.None;
             dgvCheckIns.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -61,7 +58,6 @@ namespace HotelManagement.Client.Forms
             dgvCheckIns.RowHeadersVisible = false;
             dgvCheckIns.RowTemplate.Height = 35;
 
-            // Definire coloane
             dgvCheckIns.Columns.Clear();
 
             dgvCheckIns.Columns.Add(new DataGridViewTextBoxColumn
@@ -136,7 +132,6 @@ namespace HotelManagement.Client.Forms
                 Width = 100
             });
 
-            // Adaugă coloană pentru butonul de check-in
             var checkInColumn = new DataGridViewButtonColumn
             {
                 Name = "CheckIn",
@@ -148,7 +143,6 @@ namespace HotelManagement.Client.Forms
             };
             dgvCheckIns.Columns.Add(checkInColumn);
 
-            // Adaugă coloană pentru butonul de editare
             var editColumn = new DataGridViewButtonColumn
             {
                 Name = "Edit",
@@ -170,22 +164,17 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Afișează panoul de încărcare
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Încarcă lista de check-in-uri pentru astăzi
                 _checkIns = await _reservationService.GetCheckInsForTodayAsync();
 
-                // Leagă datele la DataGridView
                 dgvCheckIns.DataSource = null;
                 dgvCheckIns.DataSource = _checkIns;
 
-                // Afișează panoul principal
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
 
-                // Actualizează eticheta cu numărul de înregistrări
                 lblRecordCount.Text = $"Total check-in-uri pentru astăzi: {_checkIns.Count}";
             }
             catch (Exception ex)
@@ -198,15 +187,12 @@ namespace HotelManagement.Client.Forms
 
         private async void dgvCheckIns_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifică dacă s-a făcut clic pe un buton (coloană de acțiune)
             if (e.RowIndex >= 0)
             {
                 var selectedReservation = _checkIns[e.RowIndex];
 
-                // Verifică ce coloană de acțiune a fost apăsată
                 if (e.ColumnIndex == dgvCheckIns.Columns["CheckIn"].Index)
                 {
-                    // Confirmă check-in-ul
                     if (MessageBox.Show($"Sigur doriți să efectuați check-in pentru rezervarea {selectedReservation.Id}?",
                         "Confirmare Check-In", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
@@ -215,7 +201,6 @@ namespace HotelManagement.Client.Forms
                 }
                 else if (e.ColumnIndex == dgvCheckIns.Columns["Edit"].Index)
                 {
-                    // Deschide formularul de editare pentru rezervarea selectată
                     var reservationForm = new ReservationForm(selectedReservation.Id);
                     ((MainForm)ParentForm).OpenChildForm(reservationForm);
                 }
@@ -226,10 +211,8 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Efectuează check-in pentru rezervare
                 await _reservationService.CheckInAsync(reservationId);
 
-                // Reîncarcă lista de check-in-uri
                 await LoadCheckIns();
 
                 MessageBox.Show("Check-in efectuat cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -247,7 +230,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnNewReservation_Click(object sender, EventArgs e)
         {
-            // Deschide formularul pentru adăugarea unei rezervări noi
             var reservationForm = new ReservationForm();
             ((MainForm)ParentForm).OpenChildForm(reservationForm);
         }

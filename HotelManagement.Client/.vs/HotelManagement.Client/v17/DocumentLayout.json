@@ -3,16 +3,64 @@
   "WorkspaceRootPath": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.client\\hotelmanagement.client\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\reservationslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\reservationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\occupancyreportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\occupancyreportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\invoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\invoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.client\\hotelmanagement.client\\forms\\hotelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\hotelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\customerslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\customerslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.client\\hotelmanagement.client\\forms\\checkoutsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\checkoutsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.client\\hotelmanagement.client\\forms\\checkoutsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\checkoutsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\reservationserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\reservationserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\hotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\hotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|d:\\teme ii\\hotelmanagement\\hotelmanagement.client\\hotelmanagement.client\\forms\\checkinsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\checkinsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\reservationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\roomform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,36 +71,12 @@
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\reservationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\models\\roommodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\models\\roommodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\reservationserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\reservationserviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\apihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\services\\hotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\services\\hotelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\reservationslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\reservationslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\reservationslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\roomslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -91,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\roomtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\dashboardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\dashboardform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -123,10 +143,6 @@
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\occupancyreportform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\occupancyreportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\occupancyreportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\invoicesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\invoicesform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -151,18 +167,6 @@
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\customerslistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\invoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\invoicesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\customerslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\customerslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|D:\\Teme II\\HotelManagement\\HotelManagement.Client\\hotelmanagement.client\\forms\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FF5DC9EB-CE56-425A-B2AD-7527758C766D}|HotelManagement.Client\\HotelManagement.Client.csproj|solutionrelative:hotelmanagement.client\\forms\\customerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
@@ -174,36 +178,192 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReservationService.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ReservationService.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\ReservationService.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ReservationService.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Services\\ReservationService.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAuwIAAAAANAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "HotelForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\HotelForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\HotelForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\HotelForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\HotelForm.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAIwLkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:25:47.285Z",
+              "WhenOpened": "2025-05-11T17:25:55.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReservationForm.Designer.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDcAAAA7AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "InvoicesForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\InvoicesForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\InvoicesForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\InvoicesForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\InvoicesForm.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwDUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:56:51.746Z"
+              "WhenOpened": "2025-05-10T13:39:23.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "OccupancyReportForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwCsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T17:30:44.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservationForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationForm.cs",
+              "ViewState": "AgIAAJUBAAAAAAAAAAAuwKYBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T13:34:11.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationsListForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationsListForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationsListForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T13:36:15.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomersListForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomersListForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomersListForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomersListForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\CustomersListForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T13:39:05.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomerForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\CustomerForm.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T13:38:42.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CheckOutsForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CheckOutsForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CheckOutsForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CheckOutsForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\CheckOutsForm.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAswPYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:21:42.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CheckOutsForm.cs [Design]",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CheckOutsForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CheckOutsForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CheckOutsForm.cs [Design]",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\CheckOutsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:21:39.969Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DashboardForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\DashboardForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\DashboardForm.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T18:14:07.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ReservationServiceService.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ReservationServiceService.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\ReservationServiceService.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ReservationServiceService.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Services\\ReservationServiceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T19:26:21.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HotelService.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\HotelService.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\HotelService.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\HotelService.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Services\\HotelService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:36:29.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\CustomerService.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\CustomerService.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T21:36:28.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CheckInsForm.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CheckInsForm.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CheckInsForm.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CheckInsForm.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\CheckInsForm.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAowOwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T17:19:05.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "RoomForm.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\RoomForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\RoomForm.cs",
@@ -215,43 +375,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\RoomService.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\RoomService.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Services\\RoomService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T14:06:41.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReservationForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationForm.cs",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAAAOQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:34:11.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "ReservationForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationForm.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.cs [Design]",
               "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:29:49.597Z"
+              "WhenOpened": "2025-05-10T19:29:49.597Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
+              "Title": "ReservationForm.Designer.cs",
+              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
+              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
+              "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationForm.Designer.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwDcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T13:56:51.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "RoomModel.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Models\\RoomModel.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Models\\RoomModel.cs",
@@ -263,66 +412,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ReservationServiceService.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ReservationServiceService.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\ReservationServiceService.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ReservationServiceService.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Services\\ReservationServiceService.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAA0wE0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T19:26:21.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\CustomerService.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\CustomerService.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T21:36:28.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApiHelper.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ApiHelper.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\ApiHelper.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\ApiHelper.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Services\\ApiHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T20:18:30.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HotelService.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\HotelService.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Services\\HotelService.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Services\\HotelService.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Services\\HotelService.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAIwGUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T21:36:29.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "ReservationsListForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationsListForm.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.cs [Design]",
               "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationsListForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T20:33:40.758Z"
+              "WhenOpened": "2025-05-10T20:33:40.758Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "RoomsListForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\RoomsListForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\RoomsListForm.cs",
@@ -333,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "RoomsListForm.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\RoomsListForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\RoomsListForm.cs",
@@ -345,19 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReservationsListForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationsListForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationsListForm.cs",
-              "ViewState": "AgIAACwCAAAAAAAAAAAmwC0CAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:36:15.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "HotelListForm.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\HotelListForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\HotelListForm.cs",
@@ -369,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\MainForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\MainForm.cs",
@@ -381,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "HotelListForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\HotelListForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\HotelListForm.cs",
@@ -392,18 +482,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "DashboardForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\DashboardForm.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.cs [Design]",
               "RelativeToolTip": "HotelManagement.Client\\Forms\\DashboardForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:10:18.294Z"
+              "WhenOpened": "2025-05-10T18:10:18.294Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Program.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Program.cs",
@@ -415,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "RoomTypesForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\RoomTypesForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\RoomTypesForm.cs",
@@ -426,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "RoomTypesForm.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\RoomTypesForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\RoomTypesForm.cs",
@@ -438,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "DashboardForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\DashboardForm.Designer.cs",
@@ -446,23 +537,12 @@
               "RelativeToolTip": "HotelManagement.Client\\Forms\\DashboardForm.Designer.cs",
               "ViewState": "AgIAAOoBAAAAAAAAAAAQwAMCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:12:05.388Z"
+              "WhenOpened": "2025-05-10T18:12:05.388Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DashboardForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\DashboardForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\DashboardForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\DashboardForm.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAQwJsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T18:14:07.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\MainForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\MainForm.cs",
@@ -473,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Properties\\AssemblyInfo.cs",
@@ -485,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\MainForm.Designer.cs",
@@ -497,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "ServicesListForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ServicesListForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ServicesListForm.cs",
@@ -508,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "RevenueReportForm.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\RevenueReportForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\RevenueReportForm.cs",
@@ -520,19 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "OccupancyReportForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\OccupancyReportForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwB0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:30:44.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "InvoicesForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\InvoicesForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\InvoicesForm.Designer.cs",
@@ -544,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "ServicesListForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ServicesListForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ServicesListForm.Designer.cs",
@@ -556,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "OccupancyReportForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\OccupancyReportForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\OccupancyReportForm.Designer.cs",
@@ -568,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "ReservationsListForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ReservationsListForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ReservationsListForm.Designer.cs",
@@ -576,11 +644,12 @@
               "RelativeToolTip": "HotelManagement.Client\\Forms\\ReservationsListForm.Designer.cs",
               "ViewState": "AgIAAPEAAAAAAAAAAAAmwP8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:34:57.408Z"
+              "WhenOpened": "2025-05-10T13:34:57.408Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "CustomerForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomerForm.Designer.cs",
@@ -588,11 +657,12 @@
               "RelativeToolTip": "HotelManagement.Client\\Forms\\CustomerForm.Designer.cs",
               "ViewState": "AgIAAJYBAAAAAAAAAAAmwKsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T17:16:59.989Z"
+              "WhenOpened": "2025-05-10T17:16:59.989Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "ServiceForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\ServiceForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\ServiceForm.Designer.cs",
@@ -604,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "CustomersListForm.Designer.cs",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomersListForm.Designer.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomersListForm.Designer.cs",
@@ -616,50 +686,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CustomerForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomerForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\CustomerForm.cs",
-              "ViewState": "AgIAAMcAAAAAAAAAAAAmwNMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:38:42.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "CustomersListForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomersListForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomersListForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomersListForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\CustomersListForm.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAmwCABAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:39:05.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "InvoicesForm.cs",
-              "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\InvoicesForm.cs",
-              "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\InvoicesForm.cs",
-              "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\InvoicesForm.cs",
-              "RelativeToolTip": "HotelManagement.Client\\Forms\\InvoicesForm.cs",
-              "ViewState": "AgIAAHkBAAAAAAAAAAAIwKMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:39:23.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "CustomerForm.cs [Design]",
               "DocumentMoniker": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.cs",
               "RelativeDocumentMoniker": "HotelManagement.Client\\Forms\\CustomerForm.cs",
               "ToolTip": "D:\\Teme II\\HotelManagement\\HotelManagement.Client\\HotelManagement.Client\\Forms\\CustomerForm.cs [Design]",
               "RelativeToolTip": "HotelManagement.Client\\Forms\\CustomerForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T13:38:38.408Z"
+              "WhenOpened": "2025-05-10T13:38:38.408Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

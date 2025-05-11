@@ -23,13 +23,11 @@ namespace HotelManagement.Client.Forms
 
             this.Text = "Invoices";
 
-            // Setup DataGridView
             SetupDataGridView();
         }
 
         private void SetupDataGridView()
         {
-            // Configure DataGridView
             dgvInvoices.AutoGenerateColumns = false;
             dgvInvoices.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvInvoices.MultiSelect = false;
@@ -39,7 +37,6 @@ namespace HotelManagement.Client.Forms
             dgvInvoices.AllowUserToOrderColumns = true;
             dgvInvoices.AllowUserToResizeRows = false;
 
-            // Styling
             dgvInvoices.BackgroundColor = Color.FromArgb(45, 45, 60);
             dgvInvoices.BorderStyle = BorderStyle.None;
             dgvInvoices.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -63,7 +60,6 @@ namespace HotelManagement.Client.Forms
             dgvInvoices.RowHeadersVisible = false;
             dgvInvoices.RowTemplate.Height = 35;
 
-            // Define columns
             dgvInvoices.Columns.Clear();
 
             dgvInvoices.Columns.Add(new DataGridViewTextBoxColumn
@@ -127,7 +123,6 @@ namespace HotelManagement.Client.Forms
                 Width = 80
             });
 
-            // Add columns for action buttons
             var viewColumn = new DataGridViewButtonColumn
             {
                 Name = "View",
@@ -166,7 +161,6 @@ namespace HotelManagement.Client.Forms
         {
             await LoadInvoices();
 
-            // If a specific invoice was specified, select it in the grid
             if (_invoiceId.HasValue)
             {
                 SelectInvoice(_invoiceId.Value);
@@ -192,14 +186,11 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Show loading panel
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Load invoice list
                 _invoices = new List<InvoiceModel>();
 
-                // Load invoices based on filter
                 if (radAllInvoices.Checked)
                 {
                     _invoices = await _invoiceService.GetAllInvoicesAsync();
@@ -213,15 +204,12 @@ namespace HotelManagement.Client.Forms
                     _invoices = await _invoiceService.GetPaidInvoicesAsync();
                 }
 
-                // Bind data to DataGridView
                 dgvInvoices.DataSource = null;
                 dgvInvoices.DataSource = _invoices;
 
-                // Show main panel
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
 
-                // Update record count label
                 lblRecordCount.Text = $"Total invoices: {_invoices.Count}";
             }
             catch (Exception ex)
@@ -234,20 +222,16 @@ namespace HotelManagement.Client.Forms
 
         private void dgvInvoices_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Check if click was on an action button
             if (e.RowIndex >= 0)
             {
                 var selectedInvoice = _invoices[e.RowIndex];
 
-                // Check which action column was clicked
                 if (e.ColumnIndex == dgvInvoices.Columns["View"].Index)
                 {
-                    // View invoice details
                     ViewInvoiceDetails(selectedInvoice);
                 }
                 else if (e.ColumnIndex == dgvInvoices.Columns["Pay"].Index)
                 {
-                    // Pay invoice
                     if (!selectedInvoice.IsPaid)
                     {
                         PayInvoice(selectedInvoice);
@@ -259,7 +243,6 @@ namespace HotelManagement.Client.Forms
                 }
                 else if (e.ColumnIndex == dgvInvoices.Columns["Print"].Index)
                 {
-                    // Print invoice
                     PrintInvoice(selectedInvoice);
                 }
             }
@@ -267,8 +250,6 @@ namespace HotelManagement.Client.Forms
 
         private void ViewInvoiceDetails(InvoiceModel invoice)
         {
-            // Open invoice details form
-            // For now, just show a message box with basic info
             string message = $"Invoice: {invoice.InvoiceNumber}\n" +
                             $"Customer: {invoice.CustomerName}\n" +
                             $"Room: {invoice.RoomInfo}\n" +
@@ -287,7 +268,6 @@ namespace HotelManagement.Client.Forms
 
         private async void PayInvoice(InvoiceModel invoice)
         {
-            // Show dialog to select payment method
             string[] paymentMethods = { "Cash", "Credit Card", "Bank Transfer" };
             string selectedMethod = ShowPaymentMethodDialog(paymentMethods);
 
@@ -295,10 +275,8 @@ namespace HotelManagement.Client.Forms
             {
                 try
                 {
-                    // Mark invoice as paid
                     await _invoiceService.MarkAsPaidAsync(invoice.Id, selectedMethod);
 
-                    // Reload invoices
                     await LoadInvoices();
 
                     MessageBox.Show("Invoice marked as paid successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -312,7 +290,6 @@ namespace HotelManagement.Client.Forms
 
         private string ShowPaymentMethodDialog(string[] methods)
         {
-            // Create a form to select payment method
             Form form = new Form();
             form.Text = "Select Payment Method";
             form.ClientSize = new Size(300, 200);
@@ -321,14 +298,12 @@ namespace HotelManagement.Client.Forms
             form.MaximizeBox = false;
             form.MinimizeBox = false;
 
-            // Create a label
             Label label = new Label();
             label.Text = "Select payment method:";
             label.AutoSize = true;
             label.Location = new Point(20, 20);
             form.Controls.Add(label);
 
-            // Create a list box
             ListBox listBox = new ListBox();
             listBox.Items.AddRange(methods);
             listBox.Location = new Point(20, 50);
@@ -336,7 +311,6 @@ namespace HotelManagement.Client.Forms
             listBox.SelectedIndex = 0;
             form.Controls.Add(listBox);
 
-            // Create buttons
             Button okButton = new Button();
             okButton.Text = "OK";
             okButton.DialogResult = DialogResult.OK;
@@ -352,7 +326,6 @@ namespace HotelManagement.Client.Forms
             form.AcceptButton = okButton;
             form.CancelButton = cancelButton;
 
-            // Show the form as a dialog
             if (form.ShowDialog() == DialogResult.OK)
             {
                 return listBox.SelectedItem.ToString();
@@ -365,8 +338,6 @@ namespace HotelManagement.Client.Forms
 
         private void PrintInvoice(InvoiceModel invoice)
         {
-            // Here you would implement invoice printing
-            // For now, just show a message box
             MessageBox.Show("Invoice printing functionality will be implemented in a future version.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -412,19 +383,16 @@ namespace HotelManagement.Client.Forms
 
             if (string.IsNullOrWhiteSpace(searchText))
             {
-                // If search is empty, show all invoices (based on current filter)
                 dgvInvoices.DataSource = _invoices;
                 lblRecordCount.Text = $"Total invoices: {_invoices.Count}";
                 return;
             }
 
-            // Filter invoices by text
             var filteredInvoices = _invoices.FindAll(i =>
                 i.InvoiceNumber.ToLower().Contains(searchText) ||
                 i.CustomerName.ToLower().Contains(searchText) ||
                 i.HotelName.ToLower().Contains(searchText));
 
-            // Update DataGridView and label
             dgvInvoices.DataSource = null;
             dgvInvoices.DataSource = filteredInvoices;
             lblRecordCount.Text = $"Invoices found: {filteredInvoices.Count} of {_invoices.Count}";

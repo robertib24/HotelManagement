@@ -22,7 +22,6 @@ namespace HotelManagement.Client.Forms
             _customerId = customerId;
             _isEditMode = customerId.HasValue;
 
-            // Set form title based on mode
             this.Text = _isEditMode ? "Edit Customer" : "Add New Customer";
             lblTitle.Text = _isEditMode ? "Edit Customer" : "Add New Customer";
             btnSave.Text = _isEditMode ? "Save Changes" : "Add Customer";
@@ -36,14 +35,12 @@ namespace HotelManagement.Client.Forms
             }
             else
             {
-                // Initialize a new customer
                 _customer = new CustomerModel
                 {
                     RegistrationDate = DateTime.Now,
                     IsVIP = false
                 };
 
-                // Set default values for controls
                 txtFirstName.Text = string.Empty;
                 txtLastName.Text = string.Empty;
                 txtEmail.Text = string.Empty;
@@ -61,14 +58,11 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Show loading panel
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Load customer for editing
                 _customer = await _customerService.GetCustomerByIdAsync(_customerId.Value);
 
-                // Populate controls with customer data
                 txtFirstName.Text = _customer.FirstName;
                 txtLastName.Text = _customer.LastName;
                 txtEmail.Text = _customer.Email;
@@ -80,7 +74,6 @@ namespace HotelManagement.Client.Forms
                 dtpDateOfBirth.Value = _customer.DateOfBirth;
                 chkIsVIP.Checked = _customer.IsVIP;
 
-                // Display additional information for existing customers
                 if (_customer.TotalStays > 0)
                 {
                     lblTotalStays.Text = $"Total stays: {_customer.TotalStays}";
@@ -94,7 +87,6 @@ namespace HotelManagement.Client.Forms
                     lblTotalSpent.Visible = false;
                 }
 
-                // Show main panel
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
             }
@@ -115,7 +107,6 @@ namespace HotelManagement.Client.Forms
 
             try
             {
-                // Update customer object with values from controls
                 _customer.FirstName = txtFirstName.Text;
                 _customer.LastName = txtLastName.Text;
                 _customer.Email = txtEmail.Text;
@@ -127,7 +118,6 @@ namespace HotelManagement.Client.Forms
                 _customer.DateOfBirth = dtpDateOfBirth.Value;
                 _customer.IsVIP = chkIsVIP.Checked;
 
-                // Save customer
                 if (_isEditMode)
                 {
                     await _customerService.UpdateCustomerAsync(_customer);
@@ -139,7 +129,6 @@ namespace HotelManagement.Client.Forms
                     MessageBox.Show("Customer added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                // Return to customer list
                 ((MainForm)ParentForm).OpenChildForm(new CustomersListForm());
             }
             catch (Exception ex)
@@ -150,7 +139,6 @@ namespace HotelManagement.Client.Forms
 
         private bool ValidateForm()
         {
-            // Check if all required fields are filled
             if (string.IsNullOrWhiteSpace(txtFirstName.Text))
             {
                 MessageBox.Show("First name is required!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -172,7 +160,6 @@ namespace HotelManagement.Client.Forms
                 return false;
             }
 
-            // Validate email format
             if (!IsValidEmail(txtEmail.Text))
             {
                 MessageBox.Show("Email address is not valid!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -187,7 +174,6 @@ namespace HotelManagement.Client.Forms
                 return false;
             }
 
-            // Validate birth date
             if (dtpDateOfBirth.Value > DateTime.Now.AddYears(-18))
             {
                 MessageBox.Show("Customer must be at least 18 years old!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -213,7 +199,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            // Return to customer list
             ((MainForm)ParentForm).OpenChildForm(new CustomersListForm());
         }
 
@@ -221,7 +206,6 @@ namespace HotelManagement.Client.Forms
         {
             if (_isEditMode)
             {
-                // Open reservation list for this customer
                 ((MainForm)ParentForm).OpenChildForm(new ReservationsListForm(_customer.Id));
             }
         }

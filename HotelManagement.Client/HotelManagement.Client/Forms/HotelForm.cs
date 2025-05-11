@@ -22,7 +22,6 @@ namespace HotelManagement.Client.Forms
             _hotelId = hotelId;
             _isEditMode = hotelId.HasValue;
 
-            // Setează titlul formularului în funcție de mod
             this.Text = _isEditMode ? "Editare hotel" : "Adaugă hotel nou";
             lblTitle.Text = _isEditMode ? "Editare hotel" : "Adaugă hotel nou";
             btnSave.Text = _isEditMode ? "Salvează modificările" : "Adaugă hotel";
@@ -36,14 +35,12 @@ namespace HotelManagement.Client.Forms
             }
             else
             {
-                // Inițializează un hotel nou
                 _hotel = new HotelModel
                 {
                     IsActive = true,
                     Stars = 3
                 };
 
-                // Setează valorile implicite pentru controale
                 txtName.Text = string.Empty;
                 txtAddress.Text = string.Empty;
                 txtCity.Text = string.Empty;
@@ -59,14 +56,11 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Afișează panoul de încărcare
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Încarcă hotelul pentru editare
                 _hotel = await _hotelService.GetHotelByIdAsync(_hotelId.Value);
 
-                // Populează controalele cu datele hotelului
                 txtName.Text = _hotel.Name;
                 txtAddress.Text = _hotel.Address;
                 txtCity.Text = _hotel.City;
@@ -79,11 +73,9 @@ namespace HotelManagement.Client.Forms
                 lblTotalRooms.Text = $"{_hotel.TotalRooms}";
                 lblAvailableRooms.Text = $"{_hotel.AvailableRooms}";
 
-                // Afișează panoul principal
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
 
-                // Afișează panoul cu informații despre camere doar în modul de editare
                 panelRoomInfo.Visible = true;
             }
             catch (Exception ex)
@@ -103,7 +95,6 @@ namespace HotelManagement.Client.Forms
 
             try
             {
-                // Actualizează obiectul hotel cu valorile din controale
                 _hotel.Name = txtName.Text;
                 _hotel.Address = txtAddress.Text;
                 _hotel.City = txtCity.Text;
@@ -113,7 +104,6 @@ namespace HotelManagement.Client.Forms
                 _hotel.Email = txtEmail.Text;
                 _hotel.IsActive = chkIsActive.Checked;
 
-                // Salvează hotelul
                 if (_isEditMode)
                 {
                     await _hotelService.UpdateHotelAsync(_hotel);
@@ -125,7 +115,6 @@ namespace HotelManagement.Client.Forms
                     MessageBox.Show("Hotel adăugat cu succes!", "Succes", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                // Revine la lista de hoteluri
                 ((MainForm)ParentForm).OpenChildForm(new HotelsListForm());
             }
             catch (Exception ex)
@@ -136,7 +125,6 @@ namespace HotelManagement.Client.Forms
 
         private bool ValidateForm()
         {
-            // Verifică dacă toate câmpurile obligatorii sunt completate
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
                 MessageBox.Show("Numele hotelului este obligatoriu!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -158,7 +146,6 @@ namespace HotelManagement.Client.Forms
                 return false;
             }
 
-            // Verifică validitatea adresei de email (dacă este furnizată)
             if (!string.IsNullOrWhiteSpace(txtEmail.Text) && !IsValidEmail(txtEmail.Text))
             {
                 MessageBox.Show("Adresa de email nu este validă!", "Validare", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -184,7 +171,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            // Revine la lista de hoteluri
             ((MainForm)ParentForm).OpenChildForm(new HotelsListForm());
         }
 
@@ -192,7 +178,6 @@ namespace HotelManagement.Client.Forms
         {
             if (_isEditMode)
             {
-                // Deschide formularul de camere pentru hotelul curent
                 var roomsForm = new RoomsListForm(_hotel.Id, _hotel.Name);
                 ((MainForm)ParentForm).OpenChildForm(roomsForm);
             }

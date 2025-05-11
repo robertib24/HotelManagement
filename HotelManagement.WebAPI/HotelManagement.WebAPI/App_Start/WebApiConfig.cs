@@ -11,19 +11,17 @@ namespace HotelManagement.WebAPI
     {
         public static void Register(HttpConfiguration config)
         {
-            // Configure CORS
             var cors = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(cors);
 
-            // Configure Web API to use Unity DI
             config.DependencyResolver = new UnityDependencyResolver(UnityConfig.Container);
 
-            // Web API routes
             config.MapHttpAttributeRoutes();
 
-            config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Never;
+            config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
+
             config.Formatters.JsonFormatter.SupportedMediaTypes
-       .Add(new MediaTypeHeaderValue("text/html"));
+                .Add(new MediaTypeHeaderValue("text/html"));
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
@@ -31,7 +29,6 @@ namespace HotelManagement.WebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            // Configure JSON serialization to ignore reference loops and nulls
             var json = config.Formatters.JsonFormatter;
             json.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
             var formatters = config.Formatters;
@@ -40,6 +37,8 @@ namespace HotelManagement.WebAPI
             settings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             settings.NullValueHandling = NullValueHandling.Ignore;
             settings.Formatting = Formatting.Indented;
+
+            json.SerializerSettings.PreserveReferencesHandling = PreserveReferencesHandling.None;
         }
     }
 }

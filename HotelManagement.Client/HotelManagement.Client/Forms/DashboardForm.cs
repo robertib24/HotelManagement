@@ -25,7 +25,6 @@ namespace HotelManagement.Client.Forms
         {
             InitializeComponent();
 
-            // DPI settings for better scaling
             this.AutoScaleDimensions = new SizeF(96F, 96F);
             this.AutoScaleMode = AutoScaleMode.Dpi;
 
@@ -38,16 +37,13 @@ namespace HotelManagement.Client.Forms
 
         private async void DashboardForm_Load(object sender, EventArgs e)
         {
-            // Suspend layout to prevent flickering
             this.SuspendLayout();
 
-            // Initially hide the main panel
             MainPanel.Visible = false;
             LoadingPanel.Visible = true;
 
             await LoadDashboardData();
 
-            // Resume layout
             this.ResumeLayout(false);
         }
 
@@ -55,17 +51,14 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Load data for dashboard
                 await Task.WhenAll(
                     LoadRoomsData(),
                     LoadCustomersData(),
                     LoadReservationsData()
                 );
 
-                // Update UI controls
                 UpdateDashboardUI();
 
-                // Show main panel
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
             }
@@ -79,7 +72,6 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadRoomsData()
         {
-            // Load hotel data
             List<HotelModel> hotels = await _hotelService.GetAllHotelsAsync();
 
             _totalRooms = 0;
@@ -96,18 +88,15 @@ namespace HotelManagement.Client.Forms
 
         private async Task LoadCustomersData()
         {
-            // Load customer data
             List<CustomerModel> customers = await _customerService.GetAllCustomersAsync();
             _customersCount = customers.Count;
         }
 
         private async Task LoadReservationsData()
         {
-            // Load reservation data
             List<ReservationModel> checkIns = await _reservationService.GetCheckInsForTodayAsync();
             _reservationsToday = checkIns.Count;
 
-            // Calculate revenue
             _revenueToday = 0;
             foreach (var reservation in checkIns)
             {
@@ -117,7 +106,6 @@ namespace HotelManagement.Client.Forms
 
         private void UpdateDashboardUI()
         {
-            // Update labels with data
             lblTotalRooms.Text = _totalRooms.ToString();
             lblOccupiedRooms.Text = _occupiedRooms.ToString();
             lblAvailableRooms.Text = _availableRooms.ToString();
@@ -125,17 +113,13 @@ namespace HotelManagement.Client.Forms
             lblReservationsToday.Text = _reservationsToday.ToString();
             lblRevenueToday.Text = $"{_revenueToday:N2} RON";
 
-            // Update current date/time
             lblCurrentDateTime.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
 
-            // Update occupancy rate and progress bar
             float occupancyRate = _totalRooms > 0 ? (float)_occupiedRooms / _totalRooms * 100 : 0;
             lblOccupancyRate.Text = $"{occupancyRate:N1}%";
 
-            // Ensure occupancy rate doesn't exceed 100 for progress bar
             prgOccupancyRate.Value = Math.Min((int)occupancyRate, 100);
 
-            // Set colors based on occupancy rate
             if (occupancyRate < 30)
                 lblOccupancyRate.ForeColor = Color.DarkGreen;
             else if (occupancyRate < 70)
@@ -151,19 +135,16 @@ namespace HotelManagement.Client.Forms
 
         private void btnNewReservation_Click(object sender, EventArgs e)
         {
-            // Open reservation form
             ((MainForm)ParentForm).OpenChildForm(new ReservationForm());
         }
 
         private void btnCheckInsToday_Click(object sender, EventArgs e)
         {
-            // Open check-in form
             ((MainForm)ParentForm).OpenChildForm(new CheckInsForm());
         }
 
         private void btnCheckOutsToday_Click(object sender, EventArgs e)
         {
-            // Open check-out form
             ((MainForm)ParentForm).OpenChildForm(new CheckOutsForm());
         }
     }

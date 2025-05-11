@@ -21,13 +21,11 @@ namespace HotelManagement.Client.Forms
 
             this.Text = "Customers List";
 
-            // Setup DataGridView
             SetupDataGridView();
         }
 
         private void SetupDataGridView()
         {
-            // Configure DataGridView
             dgvCustomers.AutoGenerateColumns = false;
             dgvCustomers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCustomers.MultiSelect = false;
@@ -37,7 +35,6 @@ namespace HotelManagement.Client.Forms
             dgvCustomers.AllowUserToOrderColumns = true;
             dgvCustomers.AllowUserToResizeRows = false;
 
-            // Styling
             dgvCustomers.BackgroundColor = Color.FromArgb(45, 45, 60);
             dgvCustomers.BorderStyle = BorderStyle.None;
             dgvCustomers.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -61,7 +58,6 @@ namespace HotelManagement.Client.Forms
             dgvCustomers.RowHeadersVisible = false;
             dgvCustomers.RowTemplate.Height = 35;
 
-            // Define columns
             dgvCustomers.Columns.Clear();
 
             dgvCustomers.Columns.Add(new DataGridViewTextBoxColumn
@@ -133,7 +129,6 @@ namespace HotelManagement.Client.Forms
                 }
             });
 
-            // Add columns for action buttons
             var viewReservationsColumn = new DataGridViewButtonColumn
             {
                 Name = "ViewReservations",
@@ -177,22 +172,17 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Show loading panel
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Load customer list
                 _customers = await _customerService.GetAllCustomersAsync();
 
-                // Bind data to DataGridView
                 dgvCustomers.DataSource = null;
                 dgvCustomers.DataSource = _customers;
 
-                // Show main panel
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
 
-                // Update record count label
                 lblRecordCount.Text = $"Total customers: {_customers.Count}";
             }
             catch (Exception ex)
@@ -205,27 +195,22 @@ namespace HotelManagement.Client.Forms
 
         private void dgvCustomers_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Check if click was on an action button
             if (e.RowIndex >= 0)
             {
                 var selectedCustomer = _customers[e.RowIndex];
 
-                // Check which action column was clicked
                 if (e.ColumnIndex == dgvCustomers.Columns["ViewReservations"].Index)
                 {
-                    // Open reservations form for the selected customer
                     var reservationsForm = new ReservationsListForm(selectedCustomer.Id);
                     ((MainForm)ParentForm).OpenChildForm(reservationsForm);
                 }
                 else if (e.ColumnIndex == dgvCustomers.Columns["Edit"].Index)
                 {
-                    // Open edit form for the selected customer
                     var customerForm = new CustomerForm(selectedCustomer.Id);
                     ((MainForm)ParentForm).OpenChildForm(customerForm);
                 }
                 else if (e.ColumnIndex == dgvCustomers.Columns["Delete"].Index)
                 {
-                    // Confirm deletion
                     if (MessageBox.Show($"Are you sure you want to delete customer '{selectedCustomer.FullName}'?",
                         "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
@@ -239,10 +224,8 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Delete customer
                 await _customerService.DeleteCustomerAsync(customerId);
 
-                // Reload customer list
                 await LoadCustomers();
 
                 MessageBox.Show("Customer deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -255,7 +238,6 @@ namespace HotelManagement.Client.Forms
 
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
-            // Open form to add a new customer
             var customerForm = new CustomerForm();
             ((MainForm)ParentForm).OpenChildForm(customerForm);
         }
@@ -278,13 +260,11 @@ namespace HotelManagement.Client.Forms
 
             if (string.IsNullOrWhiteSpace(searchText))
             {
-                // If search is empty, show all customers
                 dgvCustomers.DataSource = _customers;
                 lblRecordCount.Text = $"Total customers: {_customers.Count}";
                 return;
             }
 
-            // Filter customers by text
             var filteredCustomers = _customers.FindAll(c =>
                 c.FullName.ToLower().Contains(searchText) ||
                 c.Email.ToLower().Contains(searchText) ||
@@ -292,7 +272,6 @@ namespace HotelManagement.Client.Forms
                 c.City.ToLower().Contains(searchText) ||
                 c.Country.ToLower().Contains(searchText));
 
-            // Update DataGridView and label
             dgvCustomers.DataSource = null;
             dgvCustomers.DataSource = filteredCustomers;
             lblRecordCount.Text = $"Customers found: {filteredCustomers.Count} of {_customers.Count}";

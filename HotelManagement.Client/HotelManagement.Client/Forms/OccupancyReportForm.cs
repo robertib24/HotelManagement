@@ -26,7 +26,6 @@ namespace HotelManagement.Client.Forms
 
             this.Text = "Occupancy Report";
 
-            // Initialize date picker to current month
             dtpReportDate.Value = DateTime.Now;
         }
 
@@ -39,24 +38,19 @@ namespace HotelManagement.Client.Forms
         {
             try
             {
-                // Show loading panel
                 LoadingPanel.Visible = true;
                 MainPanel.Visible = false;
 
-                // Load all hotels
                 _hotels = await _hotelService.GetAllHotelsAsync();
 
-                // Load rooms for each hotel
                 foreach (var hotel in _hotels)
                 {
                     var rooms = await _roomService.GetRoomsByHotelAsync(hotel.Id);
                     _hotelRooms[hotel.Id] = rooms;
                 }
 
-                // Generate the report
                 GenerateReport();
 
-                // Show main panel
                 LoadingPanel.Visible = false;
                 MainPanel.Visible = true;
             }
@@ -70,13 +64,10 @@ namespace HotelManagement.Client.Forms
 
         private void GenerateReport()
         {
-            // Clear existing controls
             pnlReport.Controls.Clear();
 
-            // Set title
             lblReportTitle.Text = $"Occupancy Report - {dtpReportDate.Value:MMMM yyyy}";
 
-            // Create a summary panel
             var summaryPanel = new Panel
             {
                 Dock = DockStyle.Top,
@@ -85,7 +76,6 @@ namespace HotelManagement.Client.Forms
                 Padding = new Padding(10)
             };
 
-            // Calculate summary data
             int totalRooms = 0;
             int occupiedRooms = 0;
             int availableRooms = 0;
@@ -99,7 +89,6 @@ namespace HotelManagement.Client.Forms
 
             double occupancyRate = totalRooms > 0 ? (double)occupiedRooms / totalRooms * 100 : 0;
 
-            // Add summary labels
             var lblTotalRooms = new Label
             {
                 Text = $"Total Rooms: {totalRooms}",
@@ -142,7 +131,6 @@ namespace HotelManagement.Client.Forms
 
             pnlReport.Controls.Add(summaryPanel);
 
-            // Create a container for hotel panels
             var hotelContainer = new Panel
             {
                 Dock = DockStyle.Fill,
@@ -150,7 +138,6 @@ namespace HotelManagement.Client.Forms
                 Padding = new Padding(10)
             };
 
-            // Create a panel for each hotel
             int yPos = 10;
             foreach (var hotel in _hotels)
             {
@@ -164,7 +151,6 @@ namespace HotelManagement.Client.Forms
                     Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top
                 };
 
-                // Hotel information
                 var hotelRooms = _hotelRooms[hotel.Id];
                 int hotelTotalRooms = hotelRooms.Count;
                 int hotelOccupiedRooms = hotelRooms.Count(r => r.IsOccupied);
@@ -173,7 +159,6 @@ namespace HotelManagement.Client.Forms
                 int hotelAvailableRooms = hotelRooms.Count(r => !r.IsOccupied && !r.NeedsRepair && r.IsClean);
                 double hotelOccupancyRate = hotelTotalRooms > 0 ? (double)hotelOccupiedRooms / hotelTotalRooms * 100 : 0;
 
-                // Add hotel labels
                 var lblHotelName = new Label
                 {
                     Text = hotel.Name,
@@ -204,7 +189,6 @@ namespace HotelManagement.Client.Forms
                 };
                 hotelPanel.Controls.Add(lblHotelStats);
 
-                // Add occupancy rate progress bar
                 var lblHotelOccupancyRate = new Label
                 {
                     Text = $"Occupancy Rate: {hotelOccupancyRate:F1}%",
@@ -227,9 +211,8 @@ namespace HotelManagement.Client.Forms
                 };
                 hotelPanel.Controls.Add(prgHotelOccupancyRate);
 
-                // Add hotel panel to container
                 hotelContainer.Controls.Add(hotelPanel);
-                yPos += 200; // Add some space between hotel panels
+                yPos += 200;
             }
 
             pnlReport.Controls.Add(hotelContainer);
@@ -237,8 +220,6 @@ namespace HotelManagement.Client.Forms
 
         private async void dtpReportDate_ValueChanged(object sender, EventArgs e)
         {
-            // Update report when date changes
-            // For now, we just regenerate the same report since we don't have historical data
             await LoadData();
         }
 
@@ -249,13 +230,11 @@ namespace HotelManagement.Client.Forms
 
         private void btnPrintReport_Click(object sender, EventArgs e)
         {
-            // Implement printing functionality
             MessageBox.Show("Printing functionality will be implemented in a future version.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnExportReport_Click(object sender, EventArgs e)
         {
-            // Implement export functionality
             MessageBox.Show("Export functionality will be implemented in a future version.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
